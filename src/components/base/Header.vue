@@ -1,15 +1,139 @@
 <template>
   <div class="header">
-    header
+    <div class="header__banner">
+      <div class="header__text">
+        <div class="header__title">Merhaba, Kullanıcı</div>
+        <HeaderLogoIcon class="header__logo" />
+      </div>
+      <div class="header__subtitle">Bugün ne yemek istersin?</div>
+    </div>
+    <div class="header__config">
+      <div class="header__search">
+        <SearchIcon />
+        <input class="header__input" type="text" placeholder="Kategori ara">
+      </div>
+      <div class="header__filter">
+        <ConfigIcon />
+      </div>
+    </div>
+    <div class="header__categories">
+      <div class="header__categoryItem -active">
+        <PizzaIcon />
+        <span class="header__categoryText">Pizza</span>
+      </div>
+      <div class="header__categoryItem">
+        <PizzaIcon />
+        <span class="header__categoryText">Pizza</span>
+      </div>
+      <div class="header__categoryItem">
+        <PizzaIcon />
+        <span class="header__categoryText">Pizza</span>
+      </div>
+      <div class="header__categoryItem">
+        <PizzaIcon />
+        <span class="header__categoryText">Pizza</span>
+      </div>
+    </div>
   </div>
 </template>
   
-  <script>
+<script>
+import HeaderLogoIcon from "../../assets/images/icons/header-logo-icon.vue";
+import SearchIcon from "../../assets/images/icons/search-icon.vue";
+import ConfigIcon from "../../assets/images/icons/config-icon.vue";
+import PizzaIcon from "../../assets/images/icons/pizza-icon.vue";
 export default {
   name: "Header",
-  components: {},
+  components: {
+    HeaderLogoIcon,
+    SearchIcon,
+    ConfigIcon,
+    PizzaIcon
+  },
 };
 </script>
 <style lang="scss" scoped>
+.header {
+  padding: 15px;
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
+  &__title {
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: $black;
+  }
+
+  &__subtitle {
+    color: $subtitle;
+    font-weight: 500;
+  }
+
+  &__config {
+    margin-top: 30px;
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+    background-color: #E7E7E7;
+    padding: 15px;
+    width: 70%;
+    border-radius: 20px;
+  }
+
+  &__input {
+    border: none;
+    background: none;
+    width: 100%;
+    margin-left: 10px;
+    color: #9f9f9f;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: #CECECE;
+    }
+  }
+
+  &__config {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__filter {
+    background-color: $orange-500;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  &__categories {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__categoryItem {
+    background-color: $orange-100;
+    display: flex;
+    align-items: center;
+    color: $white;
+    font-size: 12px;
+    border-radius: 20px;
+    padding: 2px 10px 2px 2px;
+
+    &.-active {
+      background-color: $orange-500;
+    }
+  }
+
+  &__categoryText {
+    margin-left: 5px;
+  }
+}
 </style>
