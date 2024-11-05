@@ -1,34 +1,43 @@
 {
-  "categories": [
-    {
-      "name": "Pizzalar",
-      "text": "Rastgele Pizza",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730810104/category-photos/pizza.png"
-    },
-    {
-      "name": "Hamburgerler",
-      "text": "Rastgele Hamburger",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730810469/category-photos/hamburger.png"
-    },
-    {
-      "name": "Salatalar",
-      "text": "Rastgele Salata",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730815966/category-photos/salad.png"
-    },
-    {
-      "name": "Makarnalar",
-      "text": "Rastgele Makarna",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730816208/category-photos/pasta.png"
-    },
-    {
-      "name": "Tavuklar",
-      "text": "Rastgele Tavuk",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730816534/category-photos/chicken.png"
-    },
-    {
-      "name": "Etler",
-      "text": "Rastgele Et",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730816692/category-photos/meat.png"
-    }
-  ]
+  "categories": {
+    "foods": [
+      {
+        "name": "Pizzalar",
+        "text": "Rastgele Pizza",
+        "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730810104/category-photos/pizza.png"
+      },
+      {
+        "name": "Hamburgerler",
+        "text": "Rastgele Hamburger",
+        "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730810469/category-photos/hamburger.png"
+      },
+      {
+        "name": "Salatalar",
+        "text": "Rastgele Salata",
+        "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730815966/category-photos/salad.png"
+      },
+      {
+        "name": "Makarnalar",
+        "text": "Rastgele Makarna",
+        "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730816208/category-photos/pasta.png"
+      },
+      {
+        "name": "Tavuklar",
+        "text": "Rastgele Tavuk",
+        "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730816534/category-photos/chicken.png"
+      },
+      {
+        "name": "Etler",
+        "text": "Rastgele Et",
+        "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730816692/category-photos/meat.png"
+      }
+    ],
+    "drinks": [
+      {
+        "name": "Alkollü içecekler",
+        "text": "Rastgele Alkollü İçecek",
+        "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730819833/category-photos/alcohol.png"
+      }
+    ]
+  }
 }

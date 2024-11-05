@@ -4,7 +4,7 @@
     </div>
 </template>
 <script>
-import List from '../components/home/food/List.vue';
+import List from '../components/home/List.vue';
 export default {
   name: "HomePage",
   components: {
