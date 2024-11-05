@@ -9,6 +9,7 @@ export default defineConfig({
       scss: {
         additionalData: `
           @use './src/assets/scss/variables/_colors' as *;
+          @use './src/assets/scss/mixins/_mediaQueries' as *;
         `,
       },
     },

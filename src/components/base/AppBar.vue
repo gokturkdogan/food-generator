@@ -44,6 +44,10 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.08) -1px -6px 5px 0px;
   align-items: center;
 
+  @include desktop {
+    width: 30%;
+  }
+
   &__mid {
     display: flex;
     justify-content: center;
