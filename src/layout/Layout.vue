@@ -2,15 +2,18 @@
     <div class="layout">
       <Header />
       <router-view />
+      <AppBar />
     </div>
   </template>
   
   <script>
   import Header from '../components/base/Header.vue';
+  import AppBar from '../components/base/AppBar.vue';
   export default {
     name: "Layout",
     components: {
-      Header
+      Header,
+      AppBar
     }
   };
   </script>
