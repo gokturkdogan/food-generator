@@ -18,20 +18,16 @@
     </div>
     <div class="header__categories">
       <div class="header__categoryItem -active">
-        <PizzaIcon />
-        <span class="header__categoryText">Pizza</span>
+        <CategoryFoodIcon />
+        <span class="header__categoryText">Yemek</span>
       </div>
       <div class="header__categoryItem">
-        <PizzaIcon />
-        <span class="header__categoryText">Pizza</span>
+        <CategoryDrinkIcon />
+        <span class="header__categoryText">içecek</span>
       </div>
       <div class="header__categoryItem">
-        <PizzaIcon />
-        <span class="header__categoryText">Pizza</span>
-      </div>
-      <div class="header__categoryItem">
-        <PizzaIcon />
-        <span class="header__categoryText">Pizza</span>
+        <CategoryDesertIcon />
+        <span class="header__categoryText">Tatlı</span>
       </div>
     </div>
   </div>
@@ -41,14 +37,19 @@
 import HeaderLogoIcon from "../../assets/images/icons/header-logo-icon.vue";
 import SearchIcon from "../../assets/images/icons/search-icon.vue";
 import ConfigIcon from "../../assets/images/icons/config-icon.vue";
-import PizzaIcon from "../../assets/images/icons/pizza-icon.vue";
+import CategoryFoodIcon from "../../assets/images/icons/category-food-icon.vue";
+import CategoryDrinkIcon from "../../assets/images/icons/category-drink-icon.vue";
+import CategoryDesertIcon from "../../assets/images/icons/category-desert-icon.vue";
+
 export default {
   name: "Header",
   components: {
     HeaderLogoIcon,
     SearchIcon,
     ConfigIcon,
-    PizzaIcon
+    CategoryFoodIcon,
+    CategoryDrinkIcon,
+    CategoryDesertIcon
   },
 };
 </script>
@@ -126,6 +127,7 @@ export default {
     font-size: 12px;
     border-radius: 20px;
     padding: 2px 10px 2px 2px;
+    width: 25%;
 
     &.-active {
       background-color: $orange-500;

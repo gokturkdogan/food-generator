@@ -15,7 +15,7 @@ export default {
 svg {
   height: 30px;
   width: 30px;
-  border: 2px solid #000000;
+  border: 2px solid #F37B2D;
   border-radius: 100%;
   padding: 2px;
 }
