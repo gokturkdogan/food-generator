@@ -17,11 +17,11 @@
       </div>
     </div>
     <div class="header__categories">
-      <div class="header__categoryItem -active">
+      <div class="header__categoryItem" :class="{ '-active': activeCategory === 'foods' }"  @click="changeCategory('foods')">
         <CategoryFoodIcon />
         <span class="header__categoryText">Yemek</span>
       </div>
-      <div class="header__categoryItem">
+      <div class="header__categoryItem" :class="{ '-active': activeCategory === 'drinks' }" @click="changeCategory('drinks')">
         <CategoryDrinkIcon />
         <span class="header__categoryText">içecek</span>
       </div>
@@ -51,6 +51,16 @@ export default {
     CategoryDrinkIcon,
     CategoryDesertIcon
   },
+  methods: {
+    changeCategory(category) {
+      this.$store.dispatch('category/changeCategory', category)
+    }
+  },
+  computed: {
+    activeCategory() {
+      return this.$store.getters['category/getActiveCategory'];
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

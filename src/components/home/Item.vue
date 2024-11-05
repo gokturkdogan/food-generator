@@ -15,7 +15,7 @@
 </template>
         
 <script>
-import CategoryItemDiceIcon from "../../../assets/images/icons/category-item-dice-icon.vue";
+import CategoryItemDiceIcon from "../../assets/images/icons/category-item-dice-icon.vue";
 export default {
   name: "FoodItem",
   props: {
