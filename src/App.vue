@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div>
     <Splash v-if="splash" />
     <Layout v-else />
   </div>

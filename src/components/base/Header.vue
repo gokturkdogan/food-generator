@@ -56,6 +56,8 @@ export default {
 <style lang="scss" scoped>
 .header {
   padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.08) 1px 6px 5px 0px;
+
   &__text {
     display: flex;
     justify-content: space-between;

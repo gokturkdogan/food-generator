@@ -1,11 +1,17 @@
 <template>
-    <div class="deneme">
-        burası anasayfa
+    <div class="home">
+        <List />
     </div>
 </template>
+<script>
+import List from '../components/home/food/List.vue';
+export default {
+  name: "HomePage",
+  components: {
+    List
+  },
+};
+</script>
 <style lang="scss" scoped>
-    .deneme {
-        margin-top: 200px;
-        background-color: $deneme;
-    }
+
 </style>
