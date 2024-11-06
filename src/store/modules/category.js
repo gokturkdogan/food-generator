@@ -15,18 +15,17 @@ const category = {
     }
   },
   actions: {
-    async getCategories({ commit, state }) {
+    async getSubCategories({ commit, state }) {
       try {
-        const response = await Services.get(API.Categories);
-        const categoryData = response.data[state.activeCategory];
-        commit('SET_CATEGORIES', categoryData);
+        const response = await Services.get(API[state.activeCategory]);
+        commit('SET_CATEGORIES', response.data);
       } catch (error) {
         console.error('Kategori verisi alınırken bir hata oluştu:', error);
       }
     },
     async changeCategory({ commit, dispatch }, category) {
       await commit('SET_ACTIVE_CATEGORY', category);
-      dispatch('getCategories');
+      dispatch('getSubCategories');
     }
   },
   getters: {

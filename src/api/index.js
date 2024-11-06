@@ -1,5 +1,7 @@
 const api = {
-    Categories: "/categories"
+    categories: "/categories",
+    foods: "/foods",
+    drinks: "/drinks"
 };
 
 export default api;
