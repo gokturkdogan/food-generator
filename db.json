@@ -50,6 +50,31 @@
       "name": "Alkollü içecekler",
       "text": "Rastgele Alkollü İçecek",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730819833/category-photos/alcohol.png"
+    },
+    {
+      "name": "Sıcak içecekler",
+      "text": "Rastgele Sıcak İçecek",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730889720/category-photos/hot.png"
+    },
+    {
+      "name": "Soğuk içecekler",
+      "text": "Rastgele Soğuk İçecek",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730890017/category-photos/cold.png"
+    },
+    {
+      "name": "Kokteyller",
+      "text": "Rastgele Kokteyl",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730890300/category-photos/cocktail.png"
+    },
+    {
+      "name": "Frozenlar",
+      "text": "Rastgele Frozen",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730890444/category-photos/frozen.png"
+    },
+    {
+      "name": "Meyve suları",
+      "text": "Rastgele Meyve suyu",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730890663/category-photos/juice.png"
     }
   ]
 }
