@@ -12,7 +12,7 @@ export default {
   name: "App",
   data() {
     return {
-      splash: true,
+      splash: false,
     };
   },
   components: {
@@ -20,7 +20,7 @@ export default {
     Splash,
   },
   created() {
-    this.removeSplash();
+    //this.removeSplash();
   },
   methods: {
     removeSplash() {

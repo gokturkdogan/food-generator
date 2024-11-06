@@ -12,7 +12,7 @@ export default {
     Item
   },
   created() {
-    this.$store.dispatch('category/getCategories');
+    this.$store.dispatch('category/getSubCategories');
   },
   computed: {
     categories() {
@@ -22,5 +22,14 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.categoryList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: space-between;
+    padding: 0 15px 50px 15px;
+    height: calc(100vh - 350px);
+    overflow-y: scroll;
+}
 </style>
     
