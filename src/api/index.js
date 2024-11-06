@@ -1,7 +1,8 @@
 const api = {
     categories: "/categories",
     foods: "/foods",
-    drinks: "/drinks"
+    drinks: "/drinks",
+    deserts: "/deserts"
 };
 
 export default api;
