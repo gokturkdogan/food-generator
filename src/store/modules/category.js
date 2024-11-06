@@ -3,12 +3,12 @@ import API from '../../api';
 
 const category = {
   state: () => ({
-    categories: [],
+    subCategories: [],
     activeCategory: 'foods'
   }),
   mutations: {
-    SET_CATEGORIES(state, payload) {
-      state.categories = payload;
+    SET_SUB_CATEGORIES(state, payload) {
+      state.subCategories = payload;
     },
     SET_ACTIVE_CATEGORY(state, payload) {
       state.activeCategory = payload;
@@ -18,7 +18,7 @@ const category = {
     async getSubCategories({ commit, state }) {
       try {
         const response = await Services.get(API[state.activeCategory]);
-        commit('SET_CATEGORIES', response.data);
+        commit('SET_SUB_CATEGORIES', response.data);
       } catch (error) {
         console.error('Kategori verisi alınırken bir hata oluştu:', error);
       }
@@ -29,7 +29,7 @@ const category = {
     }
   },
   getters: {
-    getCategories: (state) => state.categories,
+    getSubCategories: (state) => state.subCategories,
     getActiveCategory: (state) => state.activeCategory
   },
   namespaced: true

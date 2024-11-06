@@ -76,5 +76,27 @@
       "text": "Rastgele Meyve suyu",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730890663/category-photos/juice.png"
     }
+  ],
+  "deserts": [
+    {
+      "name": "Sütlü  Tatlılar",
+      "text": "Rastgele Sütlü  Tatlı",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730892296/category-photos/milky.png"
+    },
+    {
+      "name": "Şerbetli  Tatlılar",
+      "text": "Rastgele Şerbetli  Tatlı",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730892497/category-photos/sherbet.png"
+    },
+    {
+      "name": "Çikolatalı  Tatlılar",
+      "text": "Rastgele Çikolatalı  Tatlı",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730892679/category-photos/chocolate.png"
+    },
+    {
+      "name": "Dondurmalı  Tatlılar",
+      "text": "Rastgele Dondurmalı  Tatlı",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730892940/category-photos/icecream.png"
+    }
   ]
 }

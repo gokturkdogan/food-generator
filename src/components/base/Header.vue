@@ -25,7 +25,7 @@
         <CategoryDrinkIcon />
         <span class="header__categoryText">içecek</span>
       </div>
-      <div class="header__categoryItem">
+      <div class="header__categoryItem" :class="{ '-active': activeCategory === 'deserts' }" @click="changeCategory('deserts')">
         <CategoryDesertIcon />
         <span class="header__categoryText">Tatlı</span>
       </div>

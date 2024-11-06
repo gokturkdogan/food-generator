@@ -1,6 +1,6 @@
 <template>
   <div class="categoryList">
-    <Item v-for="(category, index) in categories" :key="index" :category="category"/>
+    <Item v-for="(category, index) in subCategories" :key="index" :category="category"/>
   </div>
 </template>
       
@@ -15,8 +15,8 @@ export default {
     this.$store.dispatch('category/getSubCategories');
   },
   computed: {
-    categories() {
-      return this.$store.getters['category/getCategories'];
+    subCategories() {
+      return this.$store.getters['category/getSubCategories'];
     }
   }
 };
