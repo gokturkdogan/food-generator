@@ -1,5 +1,5 @@
 <template>
-  <div class="categoryItem">
+  <div class="categoryItem" @click="openModal()">
     <img class="categoryItem__image" :src="category.image" alt="category" />
     <div class="categoryItem__title">{{ category.name }}</div>
     <div class="categoryItem__subtitle">{{ category.text }}</div>
@@ -23,6 +23,11 @@ export default {
   components: {
     CategoryItemDiceIcon,
   },
+  methods: {
+    openModal() {
+      this.$store.commit('category/SET_MODAL', { isShow: true });
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

@@ -17,86 +17,86 @@
     {
       "name": "Pizzalar",
       "text": "Rastgele Pizza",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730810104/category-photos/pizza.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730976310/category-photos/foods/pizza.png"
     },
     {
       "name": "Hamburgerler",
       "text": "Rastgele Hamburger",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730810469/category-photos/hamburger.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730976092/category-photos/foods/hamburger.png"
     },
     {
       "name": "Salatalar",
       "text": "Rastgele Salata",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730815966/category-photos/salad.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730977416/category-photos/foods/salad.png"
     },
     {
       "name": "Makarnalar",
       "text": "Rastgele Makarna",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730816208/category-photos/pasta.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730977416/category-photos/foods/pasta.png"
     },
     {
       "name": "Tavuklar",
       "text": "Rastgele Tavuk",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730816534/category-photos/chicken.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730977416/category-photos/foods/chicken.png"
     },
     {
       "name": "Etler",
       "text": "Rastgele Et",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730816692/category-photos/meat.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730963069/category-photos/foods/meat.png"
     }
   ],
   "drinks": [
     {
       "name": "Alkollü içecekler",
       "text": "Rastgele Alkollü İçecek",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730819833/category-photos/alcohol.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964471/category-photos/drinks/alcohol.png"
     },
     {
       "name": "Sıcak içecekler",
       "text": "Rastgele Sıcak İçecek",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730889720/category-photos/hot.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964479/category-photos/drinks/hot.png"
     },
     {
       "name": "Soğuk içecekler",
       "text": "Rastgele Soğuk İçecek",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730890017/category-photos/cold.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964478/category-photos/drinks/cold.png"
     },
     {
       "name": "Kokteyller",
       "text": "Rastgele Kokteyl",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730890300/category-photos/cocktail.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964478/category-photos/drinks/cocktail.png"
     },
     {
       "name": "Frozenlar",
       "text": "Rastgele Frozen",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730890444/category-photos/frozen.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964479/category-photos/drinks/frozen.png"
     },
     {
       "name": "Meyve suları",
       "text": "Rastgele Meyve suyu",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730890663/category-photos/juice.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964478/category-photos/drinks/juice.png"
     }
   ],
   "deserts": [
     {
       "name": "Sütlü  Tatlılar",
       "text": "Rastgele Sütlü  Tatlı",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730892296/category-photos/milky.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964672/category-photos/deserts/milky.png"
     },
     {
       "name": "Şerbetli  Tatlılar",
       "text": "Rastgele Şerbetli  Tatlı",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730892497/category-photos/sherbet.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730965057/category-photos/deserts/sherbet.png"
     },
     {
       "name": "Çikolatalı  Tatlılar",
       "text": "Rastgele Çikolatalı  Tatlı",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730892679/category-photos/chocolate.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964673/category-photos/deserts/chocolate.png"
     },
     {
       "name": "Dondurmalı  Tatlılar",
       "text": "Rastgele Dondurmalı  Tatlı",
-      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730892940/category-photos/icecream.png"
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964671/category-photos/deserts/icecream.png"
     }
   ]
 }
