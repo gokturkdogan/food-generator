@@ -4,7 +4,11 @@ import API from '../../api';
 const category = {
   state: () => ({
     subCategories: [],
-    activeCategory: 'foods'
+    activeCategory: 'foods',
+    modal: {
+      isShow: false,
+      title: ''
+    }
   }),
   mutations: {
     SET_SUB_CATEGORIES(state, payload) {
@@ -12,7 +16,13 @@ const category = {
     },
     SET_ACTIVE_CATEGORY(state, payload) {
       state.activeCategory = payload;
-    }
+    },
+    SET_MODAL(state, payload) {
+      state.modal = {
+        ...state.modal,
+        ...payload
+      };
+    },
   },
   actions: {
     async getSubCategories({ commit, state }) {
@@ -30,7 +40,8 @@ const category = {
   },
   getters: {
     getSubCategories: (state) => state.subCategories,
-    getActiveCategory: (state) => state.activeCategory
+    getActiveCategory: (state) => state.activeCategory,
+    getModal: (state) => state.modal,
   },
   namespaced: true
 };
