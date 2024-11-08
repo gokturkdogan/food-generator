@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <List />
-        <Modal v-if="modal" />
+        <Modal />
     </div>
 </template>
 <script>
@@ -12,11 +12,6 @@ export default {
   components: {
     List,
     Modal
-  },
-  computed: {
-    modal() {
-      return this.$store.getters['category/getModal'].isShow;
-    }
   }
 };
 </script>

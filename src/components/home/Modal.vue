@@ -1,5 +1,5 @@
 <template>
-  <div class="modal">
+  <div v-if="modalIsShow" class="modal">
     <div class="modal__overlay">
       <div class="modal__wrapper">
         <div class="modal__header">
@@ -23,6 +23,11 @@ export default {
   methods: {
     closeModal() {
       this.$store.commit('category/SET_MODAL', { isShow: false });
+    }
+  },
+  computed: {
+    modalIsShow() {
+      return this.$store.getters['category/getModal'].isShow;
     }
   }
 };
