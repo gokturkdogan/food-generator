@@ -20,7 +20,7 @@ export default {
     Splash,
   },
   created() {
-    //this.removeSplash();
+    this.removeSplash();
   },
   methods: {
     removeSplash() {
