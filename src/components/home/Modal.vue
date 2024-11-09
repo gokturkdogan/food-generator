@@ -39,7 +39,7 @@ export default {
       this.$store.commit("category/SET_MODAL", { isShow: false, loader: true });
     },
     updateFavorites(productId, isFavorite) {
-      this.$store.dispatch('category/updateFavorites', { productId, isFavorite });
+      this.$store.dispatch('favorites/updateFavorites', { productId, isFavorite });
     }
   },
   computed: {
