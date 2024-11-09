@@ -90,25 +90,6 @@ const category = {
       } catch (error) {
         console.error("Rastgele ürün seçilirken bir hata oluştu:", error);
       }
-    },
-    async updateFavorites({ state, commit }, {productId, isFavorite}) {
-      try {
-        const product = state.products.find(product => product.id === productId);
-        if (product) {
-          const updatedProduct = {
-            ...product,
-            isFavorite: !isFavorite
-          };
-          const url = API.productdetail.replace("{id}", productId);
-          await Services.put(url, updatedProduct);
-          const selectedProduct = await Services.get(API.productdetail.replace("{id}", productId));
-          commit('SET_SELECTED_PRODUCT', selectedProduct.data);
-        } else {
-          console.warn("Belirtilen productId ile eşleşen ürün bulunamadı.");
-        }
-      } catch (error) {
-        console.error("Favoriler güncellenirken bir hata oluştu:", error);
-      }
     }
   },
   getters: {

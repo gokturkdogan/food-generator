@@ -1,17 +1,17 @@
 <template>
-    <div class="home">
+    <div class="favorites">
         <List />
-        <Modal />
     </div>
 </template>
 <script>
-import List from '../components/home/List.vue';
-import Modal from '../components/home/Modal.vue';
+import List from '../components/favorites/List.vue';
 export default {
   name: "HomePage",
   components: {
-    List,
-    Modal
+    List
+  },
+  created() {
+    this.$store.dispatch('favorites/getFavorites');
   }
 };
 </script>
