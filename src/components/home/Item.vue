@@ -1,11 +1,18 @@
 <template>
   <div class="categoryItem" @click="randomize(subcategory.id)">
-    <img class="categoryItem__image" :src="subcategory.image" alt="category" />
-    <div class="categoryItem__title">{{ subcategory.name }}</div>
-    <div class="categoryItem__subtitle">{{ subcategory.text }}</div>
-    <div class="categoryItem__actions">
-      <span class="categoryItem__actionText">Zar atmak için tıkla</span>
-      <span class="categoryItem__actionButton"><CategoryItemDiceIcon /></span>
+    <img src="../../assets//images//logos/loader.gif" v-if="loader" />
+    <div v-else>
+      <img
+        class="categoryItem__image"
+        :src="subcategory.image"
+        alt="category"
+      />
+      <div class="categoryItem__title">{{ subcategory.name }}</div>
+      <div class="categoryItem__subtitle">{{ subcategory.text }}</div>
+      <div class="categoryItem__actions">
+        <span class="categoryItem__actionText">Zar atmak için tıkla</span>
+        <span class="categoryItem__actionButton"><CategoryItemDiceIcon /></span>
+      </div>
     </div>
   </div>
 </template>
@@ -17,17 +24,22 @@ export default {
   props: {
     subcategory: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   components: {
     CategoryItemDiceIcon,
   },
   methods: {
     randomize(subCategoryId) {
-      this.$store.dispatch('category/getProducts', subCategoryId);
-    }
-  }
+      this.$store.dispatch("category/getProducts", subCategoryId);
+    },
+  },
+  computed: {
+    loader() {
+      return this.$store.getters["category/getCategoryLoader"];
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -40,7 +52,7 @@ export default {
   justify-content: center;
   width: 40%;
   height: fit-content;
-  max-height: 170px;
+  height: 170px;
   padding: 10px;
   border-radius: 15px;
   margin-top: 80px;

@@ -11,7 +11,8 @@ const category = {
     modal: {
       isShow: false,
       loader: true
-    }
+    },
+    categoryLoader: true,
   }),
   mutations: {
     SET_CATEGORIES(state, payload) {
@@ -35,6 +36,9 @@ const category = {
         ...payload
       };
     },
+    SET_CATEGORY_LOADER(state, payload) {
+      state.categoryLoader = payload;
+    },
   },
   actions: {
     async getCategories({ commit }) {
@@ -47,6 +51,7 @@ const category = {
     },
     async changeCategory({ commit, dispatch }, categoryId) {
       await commit('SET_ACTIVE_CATEGORY_ID', categoryId);
+      commit('SET_CATEGORY_LOADER', true);
       dispatch('getSubCategories');
     },
     async getSubCategories({ commit, state }) {
@@ -56,6 +61,10 @@ const category = {
         commit('SET_SUB_CATEGORIES', response.data);
       } catch (error) {
         console.error('Kategori verisi alınırken bir hata oluştu:', error);
+      } finally {
+        setTimeout(() => {
+          commit('SET_CATEGORY_LOADER', false);
+        }, 500);
       }
     },
     async getProducts({ commit, dispatch }, subCategoryId) {
@@ -109,6 +118,7 @@ const category = {
     getProducts: (state) => state.products,
     getRandomProduct: (state) => state.selectedProduct,
     getModal: (state) => state.modal,
+    getCategoryLoader: (state) => state.categoryLoader,
   },
   namespaced: true
 };
