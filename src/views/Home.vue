@@ -12,6 +12,9 @@ export default {
   components: {
     List,
     Modal
+  },
+  created() {
+    this.$store.dispatch('category/getCategories');
   }
 };
 </script>

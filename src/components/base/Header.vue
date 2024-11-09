@@ -10,24 +10,22 @@
     <div class="header__config">
       <div class="header__search">
         <SearchIcon />
-        <input class="header__input" type="text" placeholder="Kategori ara">
+        <input class="header__input" type="text" placeholder="Kategori ara" />
       </div>
       <div class="header__filter">
         <ConfigIcon />
       </div>
     </div>
     <div class="header__categories">
-      <div class="header__categoryItem" :class="{ '-active': activeCategory === 'foods' }"  @click="changeCategory('foods')">
-        <CategoryFoodIcon />
-        <span class="header__categoryText">Yemek</span>
-      </div>
-      <div class="header__categoryItem" :class="{ '-active': activeCategory === 'drinks' }" @click="changeCategory('drinks')">
-        <CategoryDrinkIcon />
-        <span class="header__categoryText">içecek</span>
-      </div>
-      <div class="header__categoryItem" :class="{ '-active': activeCategory === 'deserts' }" @click="changeCategory('deserts')">
-        <CategoryDesertIcon />
-        <span class="header__categoryText">Tatlı</span>
+      <div
+        v-for="(category, index) in categories"
+        :key="index"
+        class="header__categoryItem"
+        :class="{ '-active': activeCategoryId === category.id }"
+        @click="changeCategory(category.id)"
+      >
+        <div class="header__categoryIcon" v-html="category.image"></div>
+        <span class="header__categoryText">{{ category.name }}</span>
       </div>
     </div>
   </div>
@@ -37,9 +35,6 @@
 import HeaderLogoIcon from "../../assets/images/icons/header-logo-icon.vue";
 import SearchIcon from "../../assets/images/icons/search-icon.vue";
 import ConfigIcon from "../../assets/images/icons/config-icon.vue";
-import CategoryFoodIcon from "../../assets/images/icons/category-food-icon.vue";
-import CategoryDrinkIcon from "../../assets/images/icons/category-drink-icon.vue";
-import CategoryDesertIcon from "../../assets/images/icons/category-desert-icon.vue";
 
 export default {
   name: "Header",
@@ -47,20 +42,20 @@ export default {
     HeaderLogoIcon,
     SearchIcon,
     ConfigIcon,
-    CategoryFoodIcon,
-    CategoryDrinkIcon,
-    CategoryDesertIcon
   },
   methods: {
-    changeCategory(category) {
-      this.$store.dispatch('category/changeCategory', category)
-    }
+    changeCategory(categoryId) {
+      this.$store.dispatch("category/changeCategory", categoryId);
+    },
   },
   computed: {
-    activeCategory() {
-      return this.$store.getters['category/getActiveCategory'];
-    }
-  }
+    categories() {
+      return this.$store.getters["category/getCategories"];
+    },
+    activeCategoryId() {
+      return this.$store.getters["category/getActiveCategoryId"];
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -92,7 +87,7 @@ export default {
   &__search {
     display: flex;
     align-items: center;
-    background-color: #E7E7E7;
+    background-color: #e7e7e7;
     padding: 15px;
     width: 70%;
     border-radius: 20px;
@@ -108,7 +103,7 @@ export default {
       outline: none;
     }
     &::placeholder {
-      color: #CECECE;
+      color: #cecece;
     }
   }
 
@@ -144,6 +139,15 @@ export default {
     &.-active {
       background-color: $orange-500;
     }
+  }
+
+  &__categoryIcon {
+    height: 25px;
+    width: 25px;
+    fill: $black;
+    background-color: $white;
+    padding: 4px;
+    border-radius: 100%;
   }
 
   &__categoryText {

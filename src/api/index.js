@@ -1,8 +1,9 @@
 const api = {
     categories: "/categories",
-    foods: "/foods",
-    drinks: "/drinks",
-    deserts: "/deserts"
+    subcategories: "/subcategories?categoryId={id}",
+    products: "/products?subcategoryId={id}",
+    productdetail: "/products/{id}",
+    favorites: "/favorites"
 };
 
 export default api;

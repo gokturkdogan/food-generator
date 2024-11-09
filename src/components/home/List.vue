@@ -1,6 +1,6 @@
 <template>
   <div class="categoryList">
-    <Item v-for="(category, index) in subCategories" :key="index" :category="category"/>
+    <Item v-for="(subcategory, index) in subCategories" :key="index" :subcategory="subcategory"/>
   </div>
 </template>
       
