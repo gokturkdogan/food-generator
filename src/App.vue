@@ -12,7 +12,7 @@ export default {
   name: "App",
   data() {
     return {
-      splash: false,
+      splash: true,
     };
   },
   components: {
