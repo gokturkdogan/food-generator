@@ -1,9 +1,9 @@
 const api = {
-    categories: "/categories",
-    subcategories: "/subcategories?categoryId={id}",
-    products: "/products?subcategoryId={id}",
-    productdetail: "/products/{id}",
-    favorites: "/favorites"
+    categories: "api/categories",
+    subcategories: "api/subcategories?categoryId={id}",
+    products: "api/products?subcategoryId={id}",
+    productdetail: "api/products/{id}",
+    favorites: "api/favorites"
 };
 
 export default api;
