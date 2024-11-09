@@ -4,6 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [vue()],
+  base: '/food-generator/',
   css: {
     preprocessorOptions: {
       scss: {
