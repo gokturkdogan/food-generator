@@ -4,7 +4,7 @@ import API from '../../api';
 const category = {
   state: () => ({
     categories: [],
-    activeCategoryId: 1,
+    activeCategoryId: "1",
     subCategories: [],
     products: [],
     selectedProduct: {},
