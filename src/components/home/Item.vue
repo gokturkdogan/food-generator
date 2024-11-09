@@ -1,18 +1,11 @@
 <template>
   <div class="categoryItem" @click="randomize(subcategory.id)">
-    <img src="../../assets//images//logos/loader.gif" v-if="loader" />
-    <div v-else>
-      <img
-        class="categoryItem__image"
-        :src="subcategory.image"
-        alt="category"
-      />
-      <div class="categoryItem__title">{{ subcategory.name }}</div>
-      <div class="categoryItem__subtitle">{{ subcategory.text }}</div>
-      <div class="categoryItem__actions">
-        <span class="categoryItem__actionText">Zar atmak için tıkla</span>
-        <span class="categoryItem__actionButton"><CategoryItemDiceIcon /></span>
-      </div>
+    <img class="categoryItem__image" :src="subcategory.image" alt="category" />
+    <div class="categoryItem__title">{{ subcategory.name }}</div>
+    <div class="categoryItem__subtitle">{{ subcategory.text }}</div>
+    <div class="categoryItem__actions">
+      <span class="categoryItem__actionText">Zar atmak için tıkla</span>
+      <span class="categoryItem__actionButton"><CategoryItemDiceIcon /></span>
     </div>
   </div>
 </template>
@@ -33,11 +26,6 @@ export default {
   methods: {
     randomize(subCategoryId) {
       this.$store.dispatch("category/getProducts", subCategoryId);
-    },
-  },
-  computed: {
-    loader() {
-      return this.$store.getters["category/getCategoryLoader"];
     },
   },
 };
