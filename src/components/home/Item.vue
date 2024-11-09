@@ -17,17 +17,17 @@ export default {
   props: {
     subcategory: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   components: {
     CategoryItemDiceIcon,
   },
   methods: {
     randomize(subCategoryId) {
-      this.$store.dispatch('category/getProducts', subCategoryId);
-    }
-  }
+      this.$store.dispatch("category/getProducts", subCategoryId);
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -40,7 +40,7 @@ export default {
   justify-content: center;
   width: 40%;
   height: fit-content;
-  max-height: 170px;
+  height: 170px;
   padding: 10px;
   border-radius: 15px;
   margin-top: 80px;
