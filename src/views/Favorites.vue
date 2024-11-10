@@ -9,9 +9,6 @@ export default {
   name: "HomePage",
   components: {
     List
-  },
-  created() {
-    this.$store.dispatch('favorites/getFavorites');
   }
 };
 </script>

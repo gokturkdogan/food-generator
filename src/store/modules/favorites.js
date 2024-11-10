@@ -19,25 +19,42 @@ const favorites = {
             console.error('Kategori verisi alınırken bir hata oluştu:', error);
         }
     },
-    async updateFavorites({ commit, rootState }, { productId, isFavorite }) {
-        try {
-          const product = rootState.category.products.find(product => product.id === productId);
+    async updateFavorites({ commit, state, dispatch }, { productId, isFavorite }) {
+      try {
+          const product = state.favorites.find(product => product.id === productId);
           if (product) {
-            const updatedProduct = {
-              ...product,
-              isFavorite: !isFavorite
-            };
-            const url = API.productdetail.replace("{id}", productId);
-            await Services.put(url, updatedProduct);
-            const selectedProduct = await Services.get(API.productdetail.replace("{id}", productId));
-            commit('category/SET_SELECTED_PRODUCT', selectedProduct.data, { root: true });
+              const updatedProduct = {
+                  ...product,
+                  isFavorite: !isFavorite
+              };
+              const url = API.productdetail.replace("{id}", productId);
+              await Services.put(url, updatedProduct);
+              const favoriteData = {
+                  ...updatedProduct,
+                  productId: updatedProduct.id
+              };
+              if (isFavorite) {
+                  const favorites = await Services.get(API.favorites);
+                  const favoriteItem = favorites.data.find(fav => fav.productId === productId);
+  
+                  if (favoriteItem && favoriteItem.id) {
+                      await Services.delete(`${API.favorites}/${favoriteItem.id}`);
+                  } else {
+                      console.warn("Favorilerde belirtilen productId ile eşleşen bir objectId bulunamadı.");
+                  }
+              } else {
+                  await Services.post(API.favorites, favoriteData);
+              }
+              await dispatch('getFavorites');
+              const selectedProduct = await Services.get(API.productdetail.replace("{id}", productId));
+              commit('category/SET_SELECTED_PRODUCT', selectedProduct.data, { root: true });
           } else {
-            console.warn("Belirtilen productId ile eşleşen ürün bulunamadı.");
+              console.warn("Belirtilen productId ile eşleşen ürün bulunamadı.");
           }
-        } catch (error) {
+      } catch (error) {
           console.error("Favoriler güncellenirken bir hata oluştu:", error);
-        }
       }
+  }
   },
   getters: {
     getFavorites: (state) => state.favorites,
