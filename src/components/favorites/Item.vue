@@ -1,16 +1,17 @@
 <template>
   <div class="favoritesItem">
-    <img src="https://res.cloudinary.com/doar0vpnc/image/upload/v1731052567/product-photos/foods/pizza/mediterrenian.png" alt="favorite" class="favoritesItem__image">
+    <img v-if="loader" class="favoritesItem__loader" src="../../assets/images/logos/output-onlinegiftools.gif" alt="loader">
+    <img v-else :src="favorite.image" alt="favorite" class="favoritesItem__image">
     <div class="favoritesItem__content">
         <div class="favoritesItem__text">
             <span class="favoritesItem__title">
-                Karışık Pizza
+                {{ favorite.name }}
             </span>
             <span class="favoritesItem__subtitle">
                 Yemek / Pizza
             </span>
         </div>
-        <div class="favoritesItem__action">
+        <div class="favoritesItem__action" @click="updateFavorites(favorite.productId)">
             <FavIcon />
         </div>
     </div>
@@ -20,10 +21,28 @@
 import FavIcon from '../../assets/images/icons/favorite-icon.vue';
 export default {
   name: "FavoritesItem",
+  data() {
+    return {
+      loader: false
+    }
+  },
   components: {
     FavIcon
   },
+  props: {
+    favorite: {
+      type: Object,
+      required: true,
+    },
+  },
   created() {},
+  methods: {
+    async updateFavorites(productId) {
+      this.loader = true;
+      await this.$store.dispatch('favorites/updateFavorites', { productId, isFavorite: true });
+      this.loader = false;
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -42,6 +61,14 @@ export default {
 
   &__image {
     width: 130px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__loader {
+    width: 150px;
     position: absolute;
     left: 0;
     top: 50%;
