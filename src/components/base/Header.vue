@@ -63,6 +63,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .header {
+  z-index: 101;
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.08) 1px 6px 5px 0px;
   position: fixed;
