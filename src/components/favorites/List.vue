@@ -23,8 +23,7 @@ export default {
 <style lang="scss" scoped>
 .favoritesList {
   padding: 0 15px 50px 75px;
-  height: fit-content;
-  max-height: calc(100vh - 310px);
+  height: calc(100vh - 293px);
   overflow-y: scroll;
 }
 </style> 

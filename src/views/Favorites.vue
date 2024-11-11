@@ -47,7 +47,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 350px);
+    height: calc(100vh - 243px);
   }
 
   &__loader {
