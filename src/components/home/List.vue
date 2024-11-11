@@ -39,7 +39,8 @@ export default {
     overflow-y: scroll;
 
     &.-loader {
-      justify-content: center;align-items: center;
+      justify-content: center;
+      align-items: center;
       height: calc(100vh - 350px);
     }
 

@@ -1,8 +1,8 @@
 <template>
   <div class="appBar">
     <div class="appBar__side">
-      <HomeIcon />
-      <FavIcon />
+      <HomeIcon @click="changeRoute('Home')"/>
+      <FavIcon @click="changeRoute('Favorites')"/>
     </div>
     <div class="appBar__mid">
       <DiceIcon />
@@ -30,6 +30,11 @@ export default {
     userIcon,
     DiceIcon,
   },
+  methods: {
+    changeRoute(destination) {
+      this.$router.push({ name: destination });
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>

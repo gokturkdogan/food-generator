@@ -13,6 +13,7 @@ const category = {
       loader: true
     },
     categoryLoader: true,
+    previousIndex: null,
   }),
   mutations: {
     SET_CATEGORIES(state, payload) {
@@ -28,7 +29,10 @@ const category = {
       state.products = payload;
     },
     SET_SELECTED_PRODUCT(state, payload) {
-      state.selectedProduct = payload;
+      state.selectedProduct = {
+        ...state.selectedProduct,
+        ...payload,
+      };
     },
     SET_MODAL(state, payload) {
       state.modal = {
@@ -55,6 +59,7 @@ const category = {
       dispatch('getSubCategories');
     },
     async getSubCategories({ commit, state }) {
+      commit('SET_CATEGORY_LOADER', true);
       try {
         const url = API.subcategories.replace("{id}", state.activeCategoryId);
         const response = await Services.get(url);
@@ -64,7 +69,7 @@ const category = {
       } finally {
         setTimeout(() => {
           commit('SET_CATEGORY_LOADER', false);
-        }, 500);
+        }, 1000);
       }
     },
     async getProducts({ commit, dispatch }, subCategoryId) {
@@ -83,9 +88,17 @@ const category = {
     },
     async getRandomProduct({ commit, state }) {
       try {
-        const randomIndex = Math.floor(Math.random() * state.products.length);
+        let randomIndex;
+        if (state.products.length === 1) {
+          randomIndex = 0;
+        } else {
+          do {
+            randomIndex = Math.floor(Math.random() * state.products.length);
+          } while (randomIndex === state.previousIndex);
+        }
+        state.previousIndex = randomIndex;
         const randomProduct = state.products[randomIndex];
-        const response = await Services.get(API.productdetail.replace("{id}", randomProduct.id));
+        const response = await Services.get(API.productdetail.replace("{id}", randomProduct.productId));
         commit('SET_SELECTED_PRODUCT', response.data);
       } catch (error) {
         console.error("Rastgele ürün seçilirken bir hata oluştu:", error);

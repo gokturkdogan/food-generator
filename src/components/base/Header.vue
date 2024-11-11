@@ -16,13 +16,13 @@
         <ConfigIcon />
       </div>
     </div>
-    <div class="header__categories">
+    <div v-if="isCategoryPage" class="header__categories">
       <div
         v-for="(category, index) in categories"
         :key="index"
         class="header__categoryItem"
-        :class="{ '-active': activeCategoryId === category.id }"
-        @click="changeCategory(category.id)"
+        :class="{ '-active': activeCategoryId === category.categoryId }"
+        @click="changeCategory(category.categoryId)"
       >
         <div class="header__categoryIcon" v-html="category.image"></div>
         <span class="header__categoryText">{{ category.name }}</span>
@@ -55,6 +55,9 @@ export default {
     activeCategoryId() {
       return this.$store.getters["category/getActiveCategoryId"];
     },
+    isCategoryPage() {
+      return this.$route.name === 'Home';
+    }
   },
 };
 </script>

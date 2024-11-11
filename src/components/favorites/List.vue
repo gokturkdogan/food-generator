@@ -1,8 +1,6 @@
 <template>
   <div class="favoritesList">
-    <div>
     <Item v-for="(favorite, index) in favorites" :key="index" :favorite="favorite"/>
-  </div>
   </div>
 </template>
 <script>
