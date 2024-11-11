@@ -52,11 +52,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 .appBar {
-  position: absolute;
+  position: relative;
   bottom: 0;
   display: flex;
   justify-content: space-between;
-  width: 100%;
   padding: 20px 20px 5px 0;
   background-color: $white;
   box-shadow: rgba(0, 0, 0, 0.08) -1px -6px 5px 0px;
