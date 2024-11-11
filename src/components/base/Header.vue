@@ -10,28 +10,22 @@
     <div class="header__config">
       <div class="header__search">
         <SearchIcon />
-        <input class="header__input" type="text" placeholder="Kategori ara">
+        <input class="header__input" type="text" placeholder="Kategori ara" />
       </div>
       <div class="header__filter">
         <ConfigIcon />
       </div>
     </div>
-    <div class="header__categories">
-      <div class="header__categoryItem -active">
-        <PizzaIcon />
-        <span class="header__categoryText">Pizza</span>
-      </div>
-      <div class="header__categoryItem">
-        <PizzaIcon />
-        <span class="header__categoryText">Pizza</span>
-      </div>
-      <div class="header__categoryItem">
-        <PizzaIcon />
-        <span class="header__categoryText">Pizza</span>
-      </div>
-      <div class="header__categoryItem">
-        <PizzaIcon />
-        <span class="header__categoryText">Pizza</span>
+    <div v-if="isCategoryPage" class="header__categories">
+      <div
+        v-for="(category, index) in categories"
+        :key="index"
+        class="header__categoryItem"
+        :class="{ '-active': activeCategoryId === category.categoryId }"
+        @click="changeCategory(category.categoryId)"
+      >
+        <div class="header__categoryIcon" v-html="category.image"></div>
+        <span class="header__categoryText">{{ category.name }}</span>
       </div>
     </div>
   </div>
@@ -41,20 +35,37 @@
 import HeaderLogoIcon from "../../assets/images/icons/header-logo-icon.vue";
 import SearchIcon from "../../assets/images/icons/search-icon.vue";
 import ConfigIcon from "../../assets/images/icons/config-icon.vue";
-import PizzaIcon from "../../assets/images/icons/pizza-icon.vue";
+
 export default {
   name: "Header",
   components: {
     HeaderLogoIcon,
     SearchIcon,
     ConfigIcon,
-    PizzaIcon
+  },
+  methods: {
+    changeCategory(categoryId) {
+      this.$store.dispatch("category/changeCategory", categoryId);
+    },
+  },
+  computed: {
+    categories() {
+      return this.$store.getters["category/getCategories"];
+    },
+    activeCategoryId() {
+      return this.$store.getters["category/getActiveCategoryId"];
+    },
+    isCategoryPage() {
+      return this.$route.name === 'Home';
+    }
   },
 };
 </script>
 <style lang="scss" scoped>
 .header {
   padding: 15px;
+  box-shadow: rgba(0, 0, 0, 0.08) 1px 6px 5px 0px;
+
   &__text {
     display: flex;
     justify-content: space-between;
@@ -79,7 +90,7 @@ export default {
   &__search {
     display: flex;
     align-items: center;
-    background-color: #E7E7E7;
+    background-color: #e7e7e7;
     padding: 15px;
     width: 70%;
     border-radius: 20px;
@@ -95,7 +106,7 @@ export default {
       outline: none;
     }
     &::placeholder {
-      color: #CECECE;
+      color: #cecece;
     }
   }
 
@@ -126,10 +137,20 @@ export default {
     font-size: 12px;
     border-radius: 20px;
     padding: 2px 10px 2px 2px;
+    width: 25%;
 
     &.-active {
       background-color: $orange-500;
     }
+  }
+
+  &__categoryIcon {
+    height: 25px;
+    width: 25px;
+    fill: $black;
+    background-color: $white;
+    padding: 4px;
+    border-radius: 100%;
   }
 
   &__categoryText {

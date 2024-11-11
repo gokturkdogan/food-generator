@@ -1,8 +1,8 @@
 <template>
   <div class="appBar">
     <div class="appBar__side">
-      <HomeIcon />
-      <FavIcon />
+      <HomeIcon @click="changeRoute('Home')"/>
+      <FavIcon @click="changeRoute('Favorites')"/>
     </div>
     <div class="appBar__mid">
       <DiceIcon />
@@ -30,6 +30,11 @@ export default {
     userIcon,
     DiceIcon,
   },
+  methods: {
+    changeRoute(destination) {
+      this.$router.push({ name: destination });
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -44,6 +49,10 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.08) -1px -6px 5px 0px;
   align-items: center;
 
+  @include desktop {
+    width: 30%;
+  }
+
   &__mid {
     display: flex;
     justify-content: center;
@@ -56,6 +65,8 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     top: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
   }
 
   &__side {
