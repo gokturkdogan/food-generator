@@ -16,5 +16,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
+.home {
+  margin-top: 235px;
+}
 </style>

@@ -52,7 +52,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .appBar {
-  position: relative;
+  position: fixed;
+  width: 100%;
   bottom: 0;
   display: flex;
   justify-content: space-between;

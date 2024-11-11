@@ -65,6 +65,9 @@ export default {
 .header {
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.08) 1px 6px 5px 0px;
+  position: fixed;
+  top: 0;
+  width: 94%;
 
   &__text {
     display: flex;

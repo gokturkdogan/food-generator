@@ -43,6 +43,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .favorites {
+  margin-top: 178px;
   &.-loader {
     display: flex;
     justify-content: center;
