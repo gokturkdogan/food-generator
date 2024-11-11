@@ -32,6 +32,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .categoryItem {
+  touch-action: auto;
   position: relative;
   background-color: $white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;

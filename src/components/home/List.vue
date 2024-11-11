@@ -37,6 +37,7 @@ export default {
     height: fit-content;
     max-height: calc(100vh - 350px);
     overflow-y: scroll;
+    touch-action: auto;
 
     &.-loader {
       justify-content: center;

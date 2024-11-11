@@ -63,12 +63,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 .header {
-  z-index: 101;
+  z-index: 100;
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.08) 1px 6px 5px 0px;
   position: fixed;
   top: 0;
   width: 94%;
+  background-color: $white;
 
   &__text {
     display: flex;
