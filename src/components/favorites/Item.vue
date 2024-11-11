@@ -1,19 +1,23 @@
 <template>
   <div class="favoritesItem">
-    <img v-if="loader" class="favoritesItem__loader" src="../../assets/images/logos/output-onlinegiftools.gif" alt="loader">
-    <img v-else :src="favorite.image" alt="favorite" class="favoritesItem__image">
-    <div class="favoritesItem__content">
-        <div class="favoritesItem__text">
-            <span class="favoritesItem__title">
-                {{ favorite.name }}
-            </span>
-            <span class="favoritesItem__subtitle">
-                Yemek / Pizza
-            </span>
-        </div>
-        <div class="favoritesItem__action" @click="updateFavorites(favorite.productId)">
-            <FavIcon />
-        </div>
+    <div v-if="loader" class="favoritesItem__loader">
+      <img class="favoritesItem__gif" src="../../assets/images/logos/output-onlinegiftools.gif" alt="loader">
+    </div>
+    <div v-else class="favoritesItem__content">
+      <img :src="favorite.image" alt="favorite" class="favoritesItem__image">
+      <div class="favoritesItem__data">
+          <div class="favoritesItem__text">
+              <span class="favoritesItem__title">
+                  {{ favorite.name }}
+              </span>
+              <span class="favoritesItem__subtitle">
+                {{ favorite.categoryName }} / {{ favorite.subCategoryName }}
+              </span>
+          </div>
+          <div class="favoritesItem__action" @click="deleteFavorites(favorite.productId)">
+              <FavIcon />
+          </div>
+      </div>
     </div>
   </div>
 </template>
@@ -37,9 +41,9 @@ export default {
   },
   created() {},
   methods: {
-    async updateFavorites(productId) {
+    async deleteFavorites(productId) {
       this.loader = true;
-      await this.$store.dispatch('favorites/updateFavorites', { productId, isFavorite: true });
+      await this.$store.dispatch('favorites/deleteFavorites', { productId });
       this.loader = false;
     }
   }
@@ -68,14 +72,15 @@ export default {
   }
 
   &__loader {
-    width: 150px;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
   }
 
-  &__content {
+  &__gif {
+    width: 150px;
+  }
+
+  &__data {
     display: flex;
     justify-content: space-between;
     align-items: center;

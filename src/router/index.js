@@ -4,7 +4,7 @@ import Favorites from '../views/Favorites.vue';
 
 const routes = [
   {
-    path: '/food-generator',
+    path: '/food-generator/',
     name: 'Home',
     component: Home,
   },

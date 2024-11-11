@@ -11,7 +11,7 @@
             <img class="modal__image" :src="selectedProduct.image" alt="product" />
             <div class="modal__text">
               <span class="modal__name">{{ selectedProduct.name }}</span>
-              <span class="modal__fav" @click="updateFavorites(selectedProduct.id, selectedProduct.isFavorite)">
+              <span class="modal__fav" @click="addFavorites(selectedProduct.productId)">
                 <FavIcon v-if="selectedProduct.isFavorite" class="modal__icon" />
                 <FavIconEmpty v-else class="modal__icon" />
               </span>
@@ -38,8 +38,12 @@ export default {
     closeModal() {
       this.$store.commit("category/SET_MODAL", { isShow: false, loader: true });
     },
-    updateFavorites(productId, isFavorite) {
-      this.$store.dispatch('favorites/updateFavorites', { productId, isFavorite });
+    addFavorites(productId) {
+      if (this.selectedProduct.isFavorite) {
+        this.$store.dispatch('favorites/deleteFavorites', { productId });
+      } else {
+        this.$store.dispatch('favorites/addFavorites');
+      }
     }
   },
   computed: {

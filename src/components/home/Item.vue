@@ -1,5 +1,5 @@
 <template>
-  <div class="categoryItem" @click="randomize(subcategory.id)">
+  <div class="categoryItem" @click="randomize(subcategory.subcategoryId)">
     <img class="categoryItem__image" :src="subcategory.image" alt="category" />
     <div class="categoryItem__title">{{ subcategory.name }}</div>
     <div class="categoryItem__subtitle">{{ subcategory.text }}</div>
