@@ -1,15 +1,23 @@
 <template>
   <div class="appBar">
     <div class="appBar__side">
-      <HomeIcon @click="changeRoute('Home')"/>
-      <FavIcon @click="changeRoute('Favorites')"/>
+      <span class="appBar__link" :class="{ '-active': activeRoute === 'Home' }">
+        <HomeIcon @click="changeRoute('Home')"/>
+      </span>
+      <span class="appBar__link" :class="{ '-active': activeRoute === 'Favorites' }">
+        <FavIcon @click="changeRoute('Favorites')"/>
+      </span>
     </div>
     <div class="appBar__mid">
-      <DiceIcon />
+        <DiceIcon />
     </div>
     <div class="appBar__side">
-      <MessageIcon />
-      <userIcon />
+      <span class="appBar__link">      
+        <MessageIcon />
+      </span>
+      <span class="appBar__link">
+        <userIcon />
+      </span>
     </div>
   </div>
 </template>
@@ -34,6 +42,11 @@ export default {
     changeRoute(destination) {
       this.$router.push({ name: destination });
     }
+  },
+  computed: {
+    activeRoute() {
+      return this.$route.name;
+    }
   }
 };
 </script>
@@ -44,7 +57,7 @@ export default {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 20px 0;
+  padding: 20px 20px 5px 0;
   background-color: $white;
   box-shadow: rgba(0, 0, 0, 0.08) -1px -6px 5px 0px;
   align-items: center;
@@ -74,6 +87,20 @@ export default {
     justify-content: space-between;
     padding: 0 20px;
     width: 30%;
+  }
+
+  &__link {
+    padding-bottom: 10px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+
+    &.-active {
+      border-bottom: 5px solid $orange-500;
+      background: $orange-100;
+      background: linear-gradient(to top, $orange-300 0%, transparent 100%); /* $orange-500 yerine renk kodu */
+      clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 30% 100%);
+    }
   }
 }
 </style>
