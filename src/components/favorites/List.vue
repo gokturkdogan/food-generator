@@ -22,7 +22,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .favoritesList {
-  touch-action: auto;
   padding: 0 15px 50px 75px;
   height: calc(100vh - 293px);
   overflow-y: scroll;

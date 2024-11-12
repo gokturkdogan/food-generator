@@ -34,10 +34,7 @@ export default {
     justify-content: flex-start;
     justify-content: space-between;
     padding: 0 15px 50px 15px;
-    height: fit-content;
-    max-height: calc(100vh - 350px);
     overflow-y: scroll;
-    touch-action: auto;
 
     &.-loader {
       justify-content: center;
