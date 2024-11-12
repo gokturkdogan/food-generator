@@ -1,9 +1,7 @@
 <template>
-  <div v-if="loader" class="categoryList -loader">
-    <img class="categoryList__loader" src="../../assets//images//logos/loader.gif" />
-  </div>
-  <div v-else class="categoryList">
-    <Item v-for="(subcategory, index) in subCategories" :key="index" :subcategory="subcategory"/>
+  <div class="categoryList" :class="{ '-loader': loader }">
+    <img v-if="loader" class="categoryList__loader" src="../../assets//images//logos/loader.gif" />
+    <Item v-else v-for="(subcategory, index) in subCategories" :key="index" :subcategory="subcategory"/>
   </div>
 </template>
       
@@ -31,7 +29,6 @@ export default {
 .categoryList {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
     justify-content: space-between;
     padding: 0 15px 50px 15px;
     overflow-y: scroll;
@@ -39,7 +36,7 @@ export default {
     &.-loader {
       justify-content: center;
       align-items: center;
-      height: calc(100vh - 350px);
+      height: 100%;
     }
 
     &__loader {

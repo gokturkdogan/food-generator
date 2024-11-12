@@ -68,7 +68,8 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.08) 1px 6px 5px 0px;
   position: fixed;
   top: 0;
-  width: 94%;
+  left: 0;
+  right: 0;
   background-color: $white;
 
   &__text {

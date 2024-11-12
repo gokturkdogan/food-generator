@@ -1,6 +1,6 @@
 <template>
     <div class="favorites" :class="{ '-loader': loader }">
-      <img class="favorites__loader" v-if="loader" src="../assets/images/logos/output-onlinegiftools.gif" alt="loader">
+      <img class="favorites__loader" v-if="loader" src="../assets/images/logos/loader.gif" alt="loader">
       <div v-else>
         <div v-if="favoriteEmpty" class="favorites__empty">
           <EmptyIcon class="favorites__emptyIcon"/>
@@ -43,12 +43,11 @@ export default {
 </script>
 <style lang="scss" scoped>
 .favorites {
-  margin-top: 178px;
   &.-loader {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 243px);
+    margin-top: 57px;
   }
 
   &__loader {
@@ -59,7 +58,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    padding-top: 120px;
   }
 
   &__emptyIcon {

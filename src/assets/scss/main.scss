@@ -10,6 +10,7 @@
 body {
     background-color: #FFFEFE;
     overflow-y: hidden;
+    overflow: hidden;
 
     @include desktop {
         padding: 0 35%;
