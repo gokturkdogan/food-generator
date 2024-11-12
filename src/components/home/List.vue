@@ -1,6 +1,6 @@
 <template>
   <div class="categoryList" :class="{ '-loader': loader }">
-    <img v-if="loader" class="categoryList__loader" src="../../assets//images//logos/loader.gif" />
+    <img v-if="loader" class="categoryList__loader" src="../../assets//images/loaders/loader.gif" />
     <Item v-else v-for="(subcategory, index) in subCategories" :key="index" :subcategory="subcategory"/>
   </div>
 </template>

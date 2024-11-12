@@ -1,7 +1,7 @@
 <template>
   <div class="favoritesItem">
     <div v-if="loader" class="favoritesItem__loader">
-      <img class="favoritesItem__gif" src="../../assets/images/logos/output-onlinegiftools.gif" alt="loader">
+      <img class="favoritesItem__gif" src="../../assets/images/loaders/loader.gif" alt="loader">
     </div>
     <div v-else class="favoritesItem__content">
       <img :src="favorite.image" alt="favorite" class="favoritesItem__image">

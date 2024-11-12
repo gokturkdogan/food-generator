@@ -1,6 +1,6 @@
 <template>
     <div class="favorites" :class="{ '-loader': loader }">
-      <img class="favorites__loader" v-if="loader" src="../assets/images/logos/loader.gif" alt="loader">
+      <img class="favorites__loader" v-if="loader" src="../assets/images/loaders/loader.gif" alt="loader">
       <div v-else>
         <div v-if="favoriteEmpty" class="favorites__empty">
           <EmptyIcon class="favorites__emptyIcon"/>
@@ -15,7 +15,6 @@
 <script>
 import List from '../components/favorites/List.vue';
 import EmptyIcon from '../assets/images/icons/header-logo-icon.vue';
-import Loader from '../assets/images/logos/loader.gif';
 export default {
   name: "HomePage",
   data() {
@@ -25,8 +24,7 @@ export default {
   },
   components: {
     List,
-    EmptyIcon,
-    Loader
+    EmptyIcon
   },
   async created() {
     await this.$store.dispatch('favorites/getFavorites');
