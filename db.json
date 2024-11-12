@@ -357,7 +357,7 @@
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731140387/product-photos/foods/pasta/penne.png",
       "categoryId": "1",
       "subcategoryId": "4",
-      "isFavorite": false,
+      "isFavorite": true,
       "categoryName": "Yemek",
       "subCategoryName": "Makarna"
     },
@@ -540,6 +540,476 @@
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Et"
+    },
+    {
+      "productId": "42",
+      "name": "Beck's",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731396301/product-photos/drinks/alcohol/becks.png",
+      "categoryId": "2",
+      "subcategoryId": "7",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Alkol"
+    },
+    {
+      "productId": "43",
+      "name": "Corona",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731396525/product-photos/drinks/alcohol/corona.png",
+      "categoryId": "2",
+      "subcategoryId": "7",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Alkol"
+    },
+    {
+      "productId": "44",
+      "name": "Carlsberg",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731396637/product-photos/drinks/alcohol/carlsberg.png",
+      "categoryId": "2",
+      "subcategoryId": "7",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Alkol"
+    },
+    {
+      "productId": "45",
+      "name": "Baltika",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731396937/product-photos/drinks/alcohol/baltika.png",
+      "categoryId": "2",
+      "subcategoryId": "7",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Alkol"
+    },
+    {
+      "productId": "46",
+      "name": "Beyaz Şarap",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731397971/product-photos/drinks/alcohol/white-wine.png",
+      "categoryId": "2",
+      "subcategoryId": "7",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Alkol"
+    },
+    {
+      "productId": "47",
+      "name": "Kırmızı Şarap",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731397736/product-photos/drinks/alcohol/red-wine.png",
+      "categoryId": "2",
+      "subcategoryId": "7",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Alkol"
+    },
+    {
+      "productId": "48",
+      "name": "Rose Şarap",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731398154/product-photos/drinks/alcohol/rose-wine.png",
+      "categoryId": "2",
+      "subcategoryId": "7",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Alkol"
+    },
+    {
+      "productId": "49",
+      "name": "Viski",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731408915/product-photos/drinks/alcohol/whiskey.png",
+      "categoryId": "2",
+      "subcategoryId": "7",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Alkol"
+    },
+    {
+      "productId": "50",
+      "name": "Vodka",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731409335/product-photos/drinks/alcohol/vodka.png",
+      "categoryId": "2",
+      "subcategoryId": "7",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Alkol"
+    },
+    {
+      "productId": "50",
+      "name": "Çay",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731409643/product-photos/drinks/hot/tea.png",
+      "categoryId": "2",
+      "subcategoryId": "8",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Sıcak"
+    },
+    {
+      "productId": "51",
+      "name": "Espresso",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731409730/product-photos/drinks/hot/espresso.png",
+      "categoryId": "2",
+      "subcategoryId": "8",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Sıcak"
+    },
+    {
+      "productId": "52",
+      "name": "Americano",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731409844/product-photos/drinks/hot/americano.png",
+      "categoryId": "2",
+      "subcategoryId": "8",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Sıcak"
+    },
+    {
+      "productId": "53",
+      "name": "Macchiato",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731409943/product-photos/drinks/hot/macchiato.png",
+      "categoryId": "2",
+      "subcategoryId": "8",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Sıcak"
+    },
+    {
+      "productId": "54",
+      "name": "Fıstıklı Latte",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731410154/product-photos/drinks/hot/latte.png",
+      "categoryId": "2",
+      "subcategoryId": "8",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Sıcak"
+    },
+    {
+      "productId": "55",
+      "name": "Cappuccino",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731410242/product-photos/drinks/hot/cappuccino.png",
+      "categoryId": "2",
+      "subcategoryId": "8",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Sıcak"
+    },
+    {
+      "productId": "56",
+      "name": "Sıcak Çikolata",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731410374/product-photos/drinks/hot/chocolate.png",
+      "categoryId": "2",
+      "subcategoryId": "8",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Sıcak"
+    },
+    {
+      "productId": "57",
+      "name": "Salep",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731410459/product-photos/drinks/hot/salep.png",
+      "categoryId": "2",
+      "subcategoryId": "8",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Sıcak"
+    },
+    {
+      "productId": "58",
+      "name": "Buble Tea",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731410955/product-photos/drinks/cold/buble.png",
+      "categoryId": "2",
+      "subcategoryId": "9",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Soğuk"
+    },
+    {
+      "productId": "59",
+      "name": "Limonata",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731411115/product-photos/drinks/cold/lemonade.png",
+      "categoryId": "2",
+      "subcategoryId": "9",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Soğuk"
+    },
+    {
+      "productId": "60",
+      "name": "Redbull",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731411229/product-photos/drinks/cold/redbull.png",
+      "categoryId": "2",
+      "subcategoryId": "9",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Soğuk"
+    },
+    {
+      "productId": "61",
+      "name": "Ice Tea",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412352/product-photos/drinks/cold/icetea.png",
+      "categoryId": "2",
+      "subcategoryId": "9",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Soğuk"
+    },
+    {
+      "productId": "62",
+      "name": "Soda",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412444/product-photos/drinks/cold/soda.png",
+      "categoryId": "2",
+      "subcategoryId": "9",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Soğuk"
+    },
+    {
+      "productId": "63",
+      "name": "Schweppes",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412509/product-photos/drinks/cold/schweppes.png",
+      "categoryId": "2",
+      "subcategoryId": "9",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Soğuk"
+    },
+    {
+      "productId": "64",
+      "name": "Kola",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412606/product-photos/drinks/cold/cola.png",
+      "categoryId": "2",
+      "subcategoryId": "9",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Soğuk"
+    },
+    {
+      "productId": "65",
+      "name": "Sprite",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412673/product-photos/drinks/cold/sprite.png",
+      "categoryId": "2",
+      "subcategoryId": "9",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Soğuk"
+    },
+    {
+      "productId": "66",
+      "name": "Ayran",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412752/product-photos/drinks/cold/ayran.png",
+      "categoryId": "2",
+      "subcategoryId": "9",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Soğuk"
+    },
+    {
+      "productId": "67",
+      "name": "Ice Latte",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412825/product-photos/drinks/cold/latte.png",
+      "categoryId": "2",
+      "subcategoryId": "9",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Soğuk"
+    },
+    {
+      "productId": "68",
+      "name": "Frappe",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412882/product-photos/drinks/cold/frappe.png",
+      "categoryId": "2",
+      "subcategoryId": "9",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Soğuk"
+    },
+    {
+      "productId": "69",
+      "name": "Cherry",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413389/product-photos/drinks/cocktails/cherry.png",
+      "categoryId": "2",
+      "subcategoryId": "10",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Kokteyl"
+    },
+    {
+      "productId": "70",
+      "name": "Tropical",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413460/product-photos/drinks/cocktails/tropical.png",
+      "categoryId": "2",
+      "subcategoryId": "10",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Kokteyl"
+    },
+    {
+      "productId": "71",
+      "name": "Mojito",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413532/product-photos/drinks/cocktails/mojito.png",
+      "categoryId": "2",
+      "subcategoryId": "10",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Kokteyl"
+    },
+    {
+      "productId": "72",
+      "name": "Apple Fresh",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413644/product-photos/drinks/cocktails/apple.png",
+      "categoryId": "2",
+      "subcategoryId": "10",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Kokteyl"
+    },
+    {
+      "productId": "73",
+      "name": "Cinderella",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413713/product-photos/drinks/cocktails/cindirella.png",
+      "categoryId": "2",
+      "subcategoryId": "10",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Kokteyl"
+    },
+    {
+      "productId": "74",
+      "name": "Red Bull Twist",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413822/product-photos/drinks/cocktails/twist.png",
+      "categoryId": "2",
+      "subcategoryId": "10",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Kokteyl"
+    },
+    {
+      "productId": "75",
+      "name": "Margarita",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413986/product-photos/drinks/cocktails/margarita.png",
+      "categoryId": "2",
+      "subcategoryId": "10",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Kokteyl"
+    },
+    {
+      "productId": "76",
+      "name": "Pina Colada",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731414066/product-photos/drinks/cocktails/pina.png",
+      "categoryId": "2",
+      "subcategoryId": "10",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Kokteyl"
+    },
+    {
+      "productId": "77",
+      "name": "Frozen Çikolata",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731414475/product-photos/drinks/frozen/chocolate.png",
+      "categoryId": "2",
+      "subcategoryId": "11",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Frozen"
+    },
+    {
+      "productId": "78",
+      "name": "Milkshake",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731414606/product-photos/drinks/frozen/milkshake.png",
+      "categoryId": "2",
+      "subcategoryId": "11",
+      "isFavorite": false,
+      "categoryName": "İçecek",
+      "subCategoryName": "Frozen"
+    },
+    {
+      "productId": "79",
+      "name": "Çilek Smothie",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731414815/product-photos/drinks/frozen/straw-smothie.png",
+      "categoryId": "2",
+      "subcategoryId": "11",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Frozen"
+    },
+    {
+      "productId": "80",
+      "name": "Yeşil Smothie",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731414940/product-photos/drinks/frozen/green-smothie.png",
+      "categoryId": "2",
+      "subcategoryId": "11",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Frozen"
+    },
+    {
+      "productId": "81",
+      "name": "Tropikal Smothie",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415059/product-photos/drinks/frozen/tropical-smothie.png",
+      "categoryId": "2",
+      "subcategoryId": "11",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Frozen"
+    },
+    {
+      "productId": "82",
+      "name": "Karışık",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415472/product-photos/drinks/juice/mix.png",
+      "categoryId": "2",
+      "subcategoryId": "12",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Meyve Suyu"
+    },
+    {
+      "productId": "83",
+      "name": "Potakal Suyu",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415525/product-photos/drinks/juice/orange.png",
+      "categoryId": "2",
+      "subcategoryId": "12",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Meyve Suyu"
+    },
+    {
+      "productId": "84",
+      "name": "Vişne Suyu",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415584/product-photos/drinks/juice/cherry.png",
+      "categoryId": "2",
+      "subcategoryId": "12",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Meyve Suyu"
+    },
+    {
+      "productId": "85",
+      "name": "Elma Suyu",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415696/product-photos/drinks/juice/apple.png",
+      "categoryId": "2",
+      "subcategoryId": "12",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Meyve Suyu"
+    },
+    {
+      "productId": "86",
+      "name": "Şeftali Suyu",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415742/product-photos/drinks/juice/peach.png",
+      "categoryId": "2",
+      "subcategoryId": "12",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Meyve Suyu"
+    },
+    {
+      "productId": "87",
+      "name": "Ananas Suyu",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415788/product-photos/drinks/juice/pineapple.png",
+      "categoryId": "2",
+      "subcategoryId": "12",
+      "isFavorite": true,
+      "categoryName": "İçecek",
+      "subCategoryName": "Meyve Suyu"
     }
   ],
   "favorites": []
