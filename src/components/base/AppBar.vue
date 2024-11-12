@@ -9,7 +9,7 @@
       </span>
     </div>
     <div class="appBar__mid">
-        <DiceIcon />
+        <DiceIcon @click="randomize()"/>
     </div>
     <div class="appBar__side">
       <span class="appBar__link">      
@@ -41,6 +41,9 @@ export default {
   methods: {
     changeRoute(destination) {
       this.$router.push({ name: destination });
+    },
+    randomize() {
+      this.$store.dispatch('randomizer/randomizeWithCategory');
     }
   },
   computed: {
