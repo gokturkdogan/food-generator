@@ -15,6 +15,6 @@ export default {
 svg {
   height: 25px;
   width: 25px;
-  fill: #f37b2d;
+  fill: #ff009d;
 }
 </style>

@@ -2,7 +2,7 @@
   <div class="header">
     <div class="header__banner">
       <div class="header__text">
-        <div class="header__title">Merhaba, Kullanıcı</div>
+        <div class="header__title">Merhaba, <span class="header__suffix">Karina</span></div>
         <HeaderLogoIcon class="header__logo" />
       </div>
       <div class="header__subtitle">Bugün ne yemek istersin?</div>
@@ -84,6 +84,11 @@ export default {
     color: $black;
   }
 
+  &__suffix {
+    color: $orange-500;
+    font-weight: 600;
+  }
+
   &__subtitle {
     color: $subtitle;
     font-weight: 500;
@@ -96,7 +101,7 @@ export default {
   &__search {
     display: flex;
     align-items: center;
-    background-color: #e7e7e7;
+    background-color: $orange-100;
     padding: 15px;
     width: 70%;
     border-radius: 20px;
@@ -107,12 +112,12 @@ export default {
     background: none;
     width: 100%;
     margin-left: 10px;
-    color: #9f9f9f;
+    color: $white;
     &:focus {
       outline: none;
     }
     &::placeholder {
-      color: #cecece;
+      color: $white;
     }
   }
 

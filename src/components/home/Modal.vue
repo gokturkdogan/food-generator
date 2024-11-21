@@ -6,7 +6,7 @@
           <XMarkIcon @click="closeModal()" />
         </div>
         <div class="modal__body">
-          <iframe v-if="modal.loader" class="modal__loader" src="https://lottie.host/embed/7fd0a2c1-47ea-4c90-af48-567c00a89532/MZX9DyMM53.json"></iframe>
+          <img v-if="modal.loader" class="modal__loader" src="../../assets/images/loaders/randomizer-loader.gif" alt="">
           <div class="modal__content" v-else>
             <img class="modal__image" :src="selectedProduct.image" alt="product" />
             <div class="modal__text">
@@ -92,10 +92,8 @@ export default {
 
   &__body {
     padding: 0 40px 40px;
-  }
-
-  &__loader {
-    border: none;
+    display: flex;
+    justify-content: center;
   }
 
   &__content {
@@ -119,7 +117,7 @@ export default {
   &__name {
     font-weight: 600;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 23px;
   }
 
   &__fav {
@@ -129,6 +127,7 @@ export default {
   &__icon {
     height: 30px;
     width: 30px;
+    margin-left: 30px;
   }
 }
 </style>
