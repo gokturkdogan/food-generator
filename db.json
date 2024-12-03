@@ -18,112 +18,112 @@
   ],
   "subcategories": [
     {
-      "subcategoryId": "1",
+      "subcategoryId": "pizza",
       "name": "Pizzalar",
       "text": "Rastgele Pizza",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730976310/category-photos/foods/pizza.png",
       "categoryId": "1"
     },
     {
-      "subcategoryId": "2",
+      "subcategoryId": "burger",
       "name": "Hamburgerler",
       "text": "Rastgele Hamburger",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730976092/category-photos/foods/hamburger.png",
       "categoryId": "1"
     },
     {
-      "subcategoryId": "3",
+      "subcategoryId": "salad",
       "name": "Salatalar",
       "text": "Rastgele Salata",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730977416/category-photos/foods/salad.png",
       "categoryId": "1"
     },
     {
-      "subcategoryId": "4",
+      "subcategoryId": "pasta",
       "name": "Makarnalar",
       "text": "Rastgele Makarna",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730977416/category-photos/foods/pasta.png",
       "categoryId": "1"
     },
     {
-      "subcategoryId": "5",
+      "subcategoryId": "chicken",
       "name": "Tavuklar",
       "text": "Rastgele Tavuk",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730977416/category-photos/foods/chicken.png",
       "categoryId": "1"
     },
     {
-      "subcategoryId": "6",
+      "subcategoryId": "meat",
       "name": "Etler",
       "text": "Rastgele Et",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730963069/category-photos/foods/meat.png",
       "categoryId": "1"
     },
     {
-      "subcategoryId": "7",
+      "subcategoryId": "alcohol",
       "name": "Alkollü içecekler",
       "text": "Rastgele Alkollü İçecek",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964471/category-photos/drinks/alcohol.png",
       "categoryId": "2"
     },
     {
-      "subcategoryId": "8",
+      "subcategoryId": "hot",
       "name": "Sıcak içecekler",
       "text": "Rastgele Sıcak İçecek",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964479/category-photos/drinks/hot.png",
       "categoryId": "2"
     },
     {
-      "subcategoryId": "9",
+      "subcategoryId": "cold",
       "name": "Soğuk içecekler",
       "text": "Rastgele Soğuk İçecek",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964478/category-photos/drinks/cold.png",
       "categoryId": "2"
     },
     {
-      "subcategoryId": "10",
+      "subcategoryId": "cocktail",
       "name": "Kokteyller",
       "text": "Rastgele Kokteyl",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964478/category-photos/drinks/cocktail.png",
       "categoryId": "2"
     },
     {
-      "subcategoryId": "11",
+      "subcategoryId": "frozen",
       "name": "Frozenlar",
       "text": "Rastgele Frozen",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964479/category-photos/drinks/frozen.png",
       "categoryId": "2"
     },
     {
-      "subcategoryId": "12",
+      "subcategoryId": "juice",
       "name": "Meyve suları",
       "text": "Rastgele Meyve suyu",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964478/category-photos/drinks/juice.png",
       "categoryId": "2"
     },
     {
-      "subcategoryId": "13",
+      "subcategoryId": "milky",
       "name": "Sütlü  Tatlılar",
       "text": "Rastgele Sütlü  Tatlı",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964672/category-photos/deserts/milky.png",
       "categoryId": "3"
     },
     {
-      "subcategoryId": "14",
+      "subcategoryId": "sherbet",
       "name": "Şerbetli  Tatlılar",
       "text": "Rastgele Şerbetli  Tatlı",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730965057/category-photos/deserts/sherbet.png",
       "categoryId": "3"
     },
     {
-      "subcategoryId": "15",
-      "name": "Çikolatalı  Tatlılar",
-      "text": "Rastgele Çikolatalı  Tatlı",
+      "subcategoryId": "cake",
+      "name": "Kek  Tatlılar",
+      "text": "Rastgele Kek Tatlı",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964673/category-photos/deserts/chocolate.png",
       "categoryId": "3"
     },
     {
-      "subcategoryId": "16",
+      "subcategoryId": "icecream",
       "name": "Dondurmalı  Tatlılar",
       "text": "Rastgele Dondurmalı  Tatlı",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1730964671/category-photos/deserts/icecream.png",
@@ -136,7 +136,7 @@
       "name": "Karışık Pizza",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731044680/product-photos/foods/pizza/mix.png",
       "categoryId": "1",
-      "subcategoryId": "1",
+      "subcategoryId": "pizza",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Pizza"
@@ -146,8 +146,8 @@
       "name": "Akdeniz Pizza",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731052567/product-photos/foods/pizza/mediterrenian.png",
       "categoryId": "1",
-      "subcategoryId": "1",
-      "isFavorite": false,
+      "subcategoryId": "pizza",
+      "isFavorite": true,
       "categoryName": "Yemek",
       "subCategoryName": "Pizza"
     },
@@ -156,7 +156,7 @@
       "name": "Meksikan Pizza",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731052689/product-photos/foods/pizza/mexican.png",
       "categoryId": "1",
-      "subcategoryId": "1",
+      "subcategoryId": "pizza",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Pizza"
@@ -166,7 +166,7 @@
       "name": "Margarita Pizza",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731053064/product-photos/foods/pizza/margarita.png",
       "categoryId": "1",
-      "subcategoryId": "1",
+      "subcategoryId": "pizza",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Pizza"
@@ -176,7 +176,7 @@
       "name": "Mantarlı Pizza",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731137542/product-photos/foods/pizza/mushroom.png",
       "categoryId": "1",
-      "subcategoryId": "1",
+      "subcategoryId": "pizza",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Pizza"
@@ -186,7 +186,7 @@
       "name": "4 Peynirli Pizza",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731137614/product-photos/foods/pizza/four.png",
       "categoryId": "1",
-      "subcategoryId": "1",
+      "subcategoryId": "pizza",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Pizza"
@@ -196,7 +196,7 @@
       "name": "Jambonlu Pizza",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731137760/product-photos/foods/pizza/jambon.png",
       "categoryId": "1",
-      "subcategoryId": "1",
+      "subcategoryId": "pizza",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Pizza"
@@ -206,7 +206,7 @@
       "name": "BBQ Pizza",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731138037/product-photos/foods/pizza/bbq.png",
       "categoryId": "1",
-      "subcategoryId": "1",
+      "subcategoryId": "pizza",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Pizza"
@@ -216,7 +216,7 @@
       "name": "Meksikan Burger",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731054327/product-photos/foods/hamburger/mexican.png",
       "categoryId": "1",
-      "subcategoryId": "2",
+      "subcategoryId": "burger",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Burger"
@@ -226,7 +226,7 @@
       "name": "Cheese Burger",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731055087/product-photos/foods/hamburger/cheese.png",
       "categoryId": "1",
-      "subcategoryId": "2",
+      "subcategoryId": "burger",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Burger"
@@ -236,7 +236,7 @@
       "name": "Chicken Burger",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731055471/product-photos/foods/hamburger/chicken.png",
       "categoryId": "1",
-      "subcategoryId": "2",
+      "subcategoryId": "burger",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Burger"
@@ -246,7 +246,7 @@
       "name": "Vegan Burger",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731138165/product-photos/foods/hamburger/vegan.png",
       "categoryId": "1",
-      "subcategoryId": "2",
+      "subcategoryId": "burger",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Burger"
@@ -256,7 +256,7 @@
       "name": "BBQ Burger",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731138271/product-photos/foods/hamburger/bbq.png",
       "categoryId": "1",
-      "subcategoryId": "2",
+      "subcategoryId": "burger",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Burger"
@@ -266,7 +266,7 @@
       "name": "Klasik Burger",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731138384/product-photos/foods/hamburger/classic.png",
       "categoryId": "1",
-      "subcategoryId": "2",
+      "subcategoryId": "burger",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Burger"
@@ -276,7 +276,7 @@
       "name": "Falafel Salata",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731138625/product-photos/foods/salads/falafel.png",
       "categoryId": "1",
-      "subcategoryId": "3",
+      "subcategoryId": "salad",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Salata"
@@ -286,7 +286,7 @@
       "name": "Kinoa Salata",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731138959/product-photos/foods/salads/kinoa.png",
       "categoryId": "1",
-      "subcategoryId": "3",
+      "subcategoryId": "salad",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Salata"
@@ -296,7 +296,7 @@
       "name": "Kajun Salata",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731139164/product-photos/foods/salads/kajun.png",
       "categoryId": "1",
-      "subcategoryId": "3",
+      "subcategoryId": "salad",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Salata"
@@ -306,7 +306,7 @@
       "name": "Akdeniz Salata",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731139241/product-photos/foods/salads/mediterrenian.png",
       "categoryId": "1",
-      "subcategoryId": "3",
+      "subcategoryId": "salad",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Salata"
@@ -316,7 +316,7 @@
       "name": "Ton Balıklı Salata",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731139361/product-photos/foods/salads/tuna.png",
       "categoryId": "1",
-      "subcategoryId": "3",
+      "subcategoryId": "salad",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Salata"
@@ -326,7 +326,7 @@
       "name": "Sezar Salata",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731139443/product-photos/foods/salads/sezar.png",
       "categoryId": "1",
-      "subcategoryId": "3",
+      "subcategoryId": "salad",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Salata"
@@ -336,7 +336,7 @@
       "name": "Tavuklu Salata",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731139501/product-photos/foods/salads/chicken.png",
       "categoryId": "1",
-      "subcategoryId": "3",
+      "subcategoryId": "salad",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Salata"
@@ -346,7 +346,7 @@
       "name": "Tavuklu Noodle",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731140310/product-photos/foods/pasta/noodle.png",
       "categoryId": "1",
-      "subcategoryId": "4",
+      "subcategoryId": "pasta",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Makarna"
@@ -356,7 +356,7 @@
       "name": "Penne Arrabbiata",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731140387/product-photos/foods/pasta/penne.png",
       "categoryId": "1",
-      "subcategoryId": "4",
+      "subcategoryId": "pasta",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Makarna"
@@ -366,7 +366,7 @@
       "name": "Spaghetti Bolognese",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731140555/product-photos/foods/pasta/bolognese.png",
       "categoryId": "1",
-      "subcategoryId": "4",
+      "subcategoryId": "pasta",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Makarna"
@@ -376,7 +376,7 @@
       "name": "Chicken Fettuccine",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731140483/product-photos/foods/pasta/fettuccine-chicken.png",
       "categoryId": "1",
-      "subcategoryId": "4",
+      "subcategoryId": "pasta",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Makarna"
@@ -386,7 +386,7 @@
       "name": "Peynirli Tortellini",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731140644/product-photos/foods/pasta/tortellini.png",
       "categoryId": "1",
-      "subcategoryId": "4",
+      "subcategoryId": "pasta",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Makarna"
@@ -396,7 +396,7 @@
       "name": "Fettuccine Alfredo",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731140444/product-photos/foods/pasta/fettuccine.png",
       "categoryId": "1",
-      "subcategoryId": "4",
+      "subcategoryId": "pasta",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Makarna"
@@ -406,7 +406,7 @@
       "name": "Hardal Soslu Tavuk",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731141275/product-photos/foods/chicken/mustard.png",
       "categoryId": 1,
-      "subcategoryId": 5,
+      "subcategoryId": "chicken",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Tavuk"
@@ -416,7 +416,7 @@
       "name": "Kremalı Mantarlı Tavuk",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731141431/product-photos/foods/chicken/cremantar.png",
       "categoryId": "1",
-      "subcategoryId": "5",
+      "subcategoryId": "chicken",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Tavuk"
@@ -426,7 +426,7 @@
       "name": "Cajun Soslu Tavuk",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731141511/product-photos/foods/chicken/cajun.png",
       "categoryId": "1",
-      "subcategoryId": "5",
+      "subcategoryId": "chicken",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Tavuk"
@@ -436,7 +436,7 @@
       "name": "Tavuk Külbastı",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731141603/product-photos/foods/chicken/cutlets.png",
       "categoryId": "1",
-      "subcategoryId": "5",
+      "subcategoryId": "chicken",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Tavuk"
@@ -446,7 +446,7 @@
       "name": "Cajun Finger",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731142651/product-photos/foods/chicken/finger.png",
       "categoryId": "1",
-      "subcategoryId": "5",
+      "subcategoryId": "chicken",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Tavuk"
@@ -456,7 +456,7 @@
       "name": "Köri Soslu Tavuk",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731142450/product-photos/foods/chicken/curry.png",
       "categoryId": "1",
-      "subcategoryId": "5",
+      "subcategoryId": "chicken",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Tavuk"
@@ -466,7 +466,7 @@
       "name": "Cafe De Paris",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731142596/product-photos/foods/chicken/paris.png",
       "categoryId": "1",
-      "subcategoryId": "5",
+      "subcategoryId": "chicken",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Tavuk"
@@ -476,7 +476,7 @@
       "name": "Mushroom Chicken",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731142497/product-photos/foods/chicken/mushroom.png",
       "categoryId": "1",
-      "subcategoryId": "5",
+      "subcategoryId": "chicken",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Tavuk"
@@ -486,7 +486,7 @@
       "name": "Arizona Chicken",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731142360/product-photos/foods/chicken/arizona.png",
       "categoryId": "1",
-      "subcategoryId": "5",
+      "subcategoryId": "chicken",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Tavuk"
@@ -496,7 +496,7 @@
       "name": "Şiş Kebap",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731155728/product-photos/foods/meat/shish.png",
       "categoryId": "1",
-      "subcategoryId": "6",
+      "subcategoryId": "chicken",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Et"
@@ -506,7 +506,7 @@
       "name": "Beğendili Köfte",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731155947/product-photos/foods/meat/liked-meatballs.png",
       "categoryId": "1",
-      "subcategoryId": "6",
+      "subcategoryId": "meat",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Et"
@@ -516,7 +516,7 @@
       "name": "Bonfile",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731156284/product-photos/foods/meat/ribeye.png",
       "categoryId": "1",
-      "subcategoryId": "6",
+      "subcategoryId": "meat",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Et"
@@ -526,8 +526,8 @@
       "name": "Izgara Bonfile",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731311415/product-photos/foods/meat/tender-loin.png",
       "categoryId": "1",
-      "subcategoryId": "6",
-      "isFavorite": false,
+      "subcategoryId": "meat",
+      "isFavorite": true,
       "categoryName": "Yemek",
       "subCategoryName": "Et"
     },
@@ -536,7 +536,7 @@
       "name": "Et Fajita",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731156387/product-photos/foods/meat/steak-fajita.png",
       "categoryId": "1",
-      "subcategoryId": "6",
+      "subcategoryId": "meat",
       "isFavorite": false,
       "categoryName": "Yemek",
       "subCategoryName": "Et"
@@ -546,7 +546,7 @@
       "name": "Beck's",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731396301/product-photos/drinks/alcohol/becks.png",
       "categoryId": "2",
-      "subcategoryId": "7",
+      "subcategoryId": "alcohol",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Alkol"
@@ -556,7 +556,7 @@
       "name": "Corona",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731396525/product-photos/drinks/alcohol/corona.png",
       "categoryId": "2",
-      "subcategoryId": "7",
+      "subcategoryId": "alcohol",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Alkol"
@@ -566,7 +566,7 @@
       "name": "Carlsberg",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731396637/product-photos/drinks/alcohol/carlsberg.png",
       "categoryId": "2",
-      "subcategoryId": "7",
+      "subcategoryId": "alcohol",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Alkol"
@@ -576,7 +576,7 @@
       "name": "Baltika",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731396937/product-photos/drinks/alcohol/baltika.png",
       "categoryId": "2",
-      "subcategoryId": "7",
+      "subcategoryId": "alcohol",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Alkol"
@@ -586,8 +586,8 @@
       "name": "Beyaz Şarap",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731397971/product-photos/drinks/alcohol/white-wine.png",
       "categoryId": "2",
-      "subcategoryId": "7",
-      "isFavorite": false,
+      "subcategoryId": "alcohol",
+      "isFavorite": true,
       "categoryName": "İçecek",
       "subCategoryName": "Alkol"
     },
@@ -596,7 +596,7 @@
       "name": "Viski",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731408915/product-photos/drinks/alcohol/whiskey.png",
       "categoryId": "2",
-      "subcategoryId": "7",
+      "subcategoryId": "alcohol",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Alkol"
@@ -606,7 +606,7 @@
       "name": "Rose Şarap",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731398154/product-photos/drinks/alcohol/rose-wine.png",
       "categoryId": "2",
-      "subcategoryId": "7",
+      "subcategoryId": "alcohol",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Alkol"
@@ -616,7 +616,7 @@
       "name": "Viski",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731408915/product-photos/drinks/alcohol/whiskey.png",
       "categoryId": "2",
-      "subcategoryId": "7",
+      "subcategoryId": "alcohol",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Alkol"
@@ -626,8 +626,8 @@
       "name": "Vodka",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731409335/product-photos/drinks/alcohol/vodka.png",
       "categoryId": "2",
-      "subcategoryId": "7",
-      "isFavorite": false,
+      "subcategoryId": "alcohol",
+      "isFavorite": true,
       "categoryName": "İçecek",
       "subCategoryName": "Alkol"
     },
@@ -636,7 +636,7 @@
       "name": "Çay",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731409643/product-photos/drinks/hot/tea.png",
       "categoryId": "2",
-      "subcategoryId": "8",
+      "subcategoryId": "hot",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Sıcak"
@@ -646,7 +646,7 @@
       "name": "Espresso",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731409730/product-photos/drinks/hot/espresso.png",
       "categoryId": "2",
-      "subcategoryId": "8",
+      "subcategoryId": "hot",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Sıcak"
@@ -656,7 +656,7 @@
       "name": "Americano",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731409844/product-photos/drinks/hot/americano.png",
       "categoryId": "2",
-      "subcategoryId": "8",
+      "subcategoryId": "hot",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Sıcak"
@@ -666,7 +666,7 @@
       "name": "Macchiato",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731409943/product-photos/drinks/hot/macchiato.png",
       "categoryId": "2",
-      "subcategoryId": "8",
+      "subcategoryId": "hot",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Sıcak"
@@ -676,8 +676,8 @@
       "name": "Fıstıklı Latte",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731410154/product-photos/drinks/hot/latte.png",
       "categoryId": "2",
-      "subcategoryId": "8",
-      "isFavorite": false,
+      "subcategoryId": "hot",
+      "isFavorite": true,
       "categoryName": "İçecek",
       "subCategoryName": "Sıcak"
     },
@@ -686,7 +686,7 @@
       "name": "Cappuccino",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731410242/product-photos/drinks/hot/cappuccino.png",
       "categoryId": "2",
-      "subcategoryId": "8",
+      "subcategoryId": "hot",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Sıcak"
@@ -696,7 +696,7 @@
       "name": "Sıcak Çikolata",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731410374/product-photos/drinks/hot/chocolate.png",
       "categoryId": "2",
-      "subcategoryId": "8",
+      "subcategoryId": "hot",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Sıcak"
@@ -706,7 +706,7 @@
       "name": "Salep",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731410459/product-photos/drinks/hot/salep.png",
       "categoryId": "2",
-      "subcategoryId": "8",
+      "subcategoryId": "hot",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Sıcak"
@@ -716,7 +716,7 @@
       "name": "Buble Tea",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731410955/product-photos/drinks/cold/buble.png",
       "categoryId": "2",
-      "subcategoryId": "9",
+      "subcategoryId": "cold",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Soğuk"
@@ -726,7 +726,7 @@
       "name": "Limonata",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731411115/product-photos/drinks/cold/lemonade.png",
       "categoryId": "2",
-      "subcategoryId": "9",
+      "subcategoryId": "cold",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Soğuk"
@@ -736,7 +736,7 @@
       "name": "Redbull",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731411229/product-photos/drinks/cold/redbull.png",
       "categoryId": "2",
-      "subcategoryId": "9",
+      "subcategoryId": "cold",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Soğuk"
@@ -746,7 +746,7 @@
       "name": "Ice Tea",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412352/product-photos/drinks/cold/icetea.png",
       "categoryId": "2",
-      "subcategoryId": "9",
+      "subcategoryId": "cold",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Soğuk"
@@ -756,7 +756,7 @@
       "name": "Soda",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412444/product-photos/drinks/cold/soda.png",
       "categoryId": "2",
-      "subcategoryId": "9",
+      "subcategoryId": "cold",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Soğuk"
@@ -766,7 +766,7 @@
       "name": "Schweppes",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412509/product-photos/drinks/cold/schweppes.png",
       "categoryId": "2",
-      "subcategoryId": "9",
+      "subcategoryId": "cold",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Soğuk"
@@ -776,7 +776,7 @@
       "name": "Kola",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412606/product-photos/drinks/cold/cola.png",
       "categoryId": "2",
-      "subcategoryId": "9",
+      "subcategoryId": "cold",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Soğuk"
@@ -786,7 +786,7 @@
       "name": "Sprite",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412673/product-photos/drinks/cold/sprite.png",
       "categoryId": "2",
-      "subcategoryId": "9",
+      "subcategoryId": "cold",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Soğuk"
@@ -796,7 +796,7 @@
       "name": "Ayran",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412752/product-photos/drinks/cold/ayran.png",
       "categoryId": "2",
-      "subcategoryId": "9",
+      "subcategoryId": "cold",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Soğuk"
@@ -806,7 +806,7 @@
       "name": "Ice Latte",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412825/product-photos/drinks/cold/latte.png",
       "categoryId": "2",
-      "subcategoryId": "9",
+      "subcategoryId": "cold",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Soğuk"
@@ -816,7 +816,7 @@
       "name": "Frappe",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731412882/product-photos/drinks/cold/frappe.png",
       "categoryId": "2",
-      "subcategoryId": "9",
+      "subcategoryId": "cold",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Soğuk"
@@ -826,7 +826,7 @@
       "name": "Cherry",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413389/product-photos/drinks/cocktails/cherry.png",
       "categoryId": "2",
-      "subcategoryId": "10",
+      "subcategoryId": "cocktail",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Kokteyl"
@@ -836,7 +836,7 @@
       "name": "Tropical",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413460/product-photos/drinks/cocktails/tropical.png",
       "categoryId": "2",
-      "subcategoryId": "10",
+      "subcategoryId": "cocktail",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Kokteyl"
@@ -846,7 +846,7 @@
       "name": "Mojito",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413532/product-photos/drinks/cocktails/mojito.png",
       "categoryId": "2",
-      "subcategoryId": "10",
+      "subcategoryId": "cocktail",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Kokteyl"
@@ -856,7 +856,7 @@
       "name": "Apple Fresh",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413644/product-photos/drinks/cocktails/apple.png",
       "categoryId": "2",
-      "subcategoryId": "10",
+      "subcategoryId": "cocktail",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Kokteyl"
@@ -866,7 +866,7 @@
       "name": "Cinderella",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413713/product-photos/drinks/cocktails/cindirella.png",
       "categoryId": "2",
-      "subcategoryId": "10",
+      "subcategoryId": "cocktail",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Kokteyl"
@@ -876,7 +876,7 @@
       "name": "Red Bull Twist",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413822/product-photos/drinks/cocktails/twist.png",
       "categoryId": "2",
-      "subcategoryId": "10",
+      "subcategoryId": "cocktail",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Kokteyl"
@@ -886,7 +886,7 @@
       "name": "Margarita",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731413986/product-photos/drinks/cocktails/margarita.png",
       "categoryId": "2",
-      "subcategoryId": "10",
+      "subcategoryId": "cocktail",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Kokteyl"
@@ -896,7 +896,7 @@
       "name": "Pina Colada",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731414066/product-photos/drinks/cocktails/pina.png",
       "categoryId": "2",
-      "subcategoryId": "10",
+      "subcategoryId": "cocktail",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Kokteyl"
@@ -906,7 +906,7 @@
       "name": "Frozen Çikolata",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731414475/product-photos/drinks/frozen/chocolate.png",
       "categoryId": "2",
-      "subcategoryId": "11",
+      "subcategoryId": "frozen",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Frozen"
@@ -916,7 +916,7 @@
       "name": "Milkshake",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731414606/product-photos/drinks/frozen/milkshake.png",
       "categoryId": "2",
-      "subcategoryId": "11",
+      "subcategoryId": "frozen",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Frozen"
@@ -926,7 +926,7 @@
       "name": "Çilek Smothie",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731414815/product-photos/drinks/frozen/straw-smothie.png",
       "categoryId": "2",
-      "subcategoryId": "11",
+      "subcategoryId": "frozen",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Frozen"
@@ -936,7 +936,7 @@
       "name": "Yeşil Smothie",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731414940/product-photos/drinks/frozen/green-smothie.png",
       "categoryId": "2",
-      "subcategoryId": "11",
+      "subcategoryId": "frozen",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Frozen"
@@ -946,7 +946,7 @@
       "name": "Tropikal Smothie",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415059/product-photos/drinks/frozen/tropical-smothie.png",
       "categoryId": "2",
-      "subcategoryId": "11",
+      "subcategoryId": "frozen",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Frozen"
@@ -956,7 +956,7 @@
       "name": "Karışık",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415472/product-photos/drinks/juice/mix.png",
       "categoryId": "2",
-      "subcategoryId": "12",
+      "subcategoryId": "juice",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Meyve Suyu"
@@ -966,8 +966,8 @@
       "name": "Potakal Suyu",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415525/product-photos/drinks/juice/orange.png",
       "categoryId": "2",
-      "subcategoryId": "12",
-      "isFavorite": false,
+      "subcategoryId": "juice",
+      "isFavorite": true,
       "categoryName": "İçecek",
       "subCategoryName": "Meyve Suyu"
     },
@@ -976,7 +976,7 @@
       "name": "Vişne Suyu",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415584/product-photos/drinks/juice/cherry.png",
       "categoryId": "2",
-      "subcategoryId": "12",
+      "subcategoryId": "juice",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Meyve Suyu"
@@ -986,7 +986,7 @@
       "name": "Elma Suyu",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415696/product-photos/drinks/juice/apple.png",
       "categoryId": "2",
-      "subcategoryId": "12",
+      "subcategoryId": "juice",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Meyve Suyu"
@@ -996,7 +996,7 @@
       "name": "Şeftali Suyu",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415742/product-photos/drinks/juice/peach.png",
       "categoryId": "2",
-      "subcategoryId": "12",
+      "subcategoryId": "juice",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Meyve Suyu"
@@ -1006,7 +1006,7 @@
       "name": "Ananas Suyu",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415788/product-photos/drinks/juice/pineapple.png",
       "categoryId": "2",
-      "subcategoryId": "12",
+      "subcategoryId": "juice",
       "isFavorite": false,
       "categoryName": "İçecek",
       "subCategoryName": "Meyve Suyu"
@@ -1016,7 +1016,7 @@
       "name": "Magnolya",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731424044/product-photos/deserts/milky/magnolia.png",
       "categoryId": "3",
-      "subcategoryId": "13",
+      "subcategoryId": "milky",
       "isFavorite": false,
       "categoryName": "Tatlı",
       "subCategoryName": "Sütlü"
@@ -1026,7 +1026,7 @@
       "name": "Sütlaç",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731424145/product-photos/deserts/milky/sutlac.png",
       "categoryId": "3",
-      "subcategoryId": "13",
+      "subcategoryId": "milky",
       "isFavorite": false,
       "categoryName": "Tatlı",
       "subCategoryName": "Sütlü"
@@ -1036,8 +1036,8 @@
       "name": "Baklava",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731424585/product-photos/deserts/sherbet/baklava.png",
       "categoryId": "3",
-      "subcategoryId": "14",
-      "isFavorite": false,
+      "subcategoryId": "sherbet",
+      "isFavorite": true,
       "categoryName": "Tatlı",
       "subCategoryName": "Şerbetli"
     },
@@ -1046,7 +1046,7 @@
       "name": "Şöbiyet",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731424887/product-photos/deserts/sherbet/s%C3%B6biyet.png",
       "categoryId": "3",
-      "subcategoryId": "14",
+      "subcategoryId": "sherbet",
       "isFavorite": false,
       "categoryName": "Tatlı",
       "subCategoryName": "Şerbetli"
@@ -1056,7 +1056,7 @@
       "name": "San Sebastian",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731425030/product-photos/deserts/chocolate/sebastian.png",
       "categoryId": "3",
-      "subcategoryId": "15",
+      "subcategoryId": "cake",
       "isFavorite": false,
       "categoryName": "Tatlı",
       "subCategoryName": "Kek"
@@ -1066,7 +1066,7 @@
       "name": "Çikolatalı Pasta",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731425332/product-photos/deserts/chocolate/chocolate-cake.png",
       "categoryId": "3",
-      "subcategoryId": "15",
+      "subcategoryId": "cake",
       "isFavorite": false,
       "categoryName": "Tatlı",
       "subCategoryName": "Kek"
@@ -1076,7 +1076,7 @@
       "name": "Çilekli Pasta",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731425533/product-photos/deserts/chocolate/berry-cake.png",
       "categoryId": "3",
-      "subcategoryId": "15",
+      "subcategoryId": "cake",
       "isFavorite": false,
       "categoryName": "Tatlı",
       "subCategoryName": "Kek"
@@ -1086,7 +1086,7 @@
       "name": "Profiterol",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731425652/product-photos/deserts/chocolate/profiterol.png",
       "categoryId": "3",
-      "subcategoryId": "15",
+      "subcategoryId": "cake",
       "isFavorite": false,
       "categoryName": "Tatlı",
       "subCategoryName": "Kek"
@@ -1096,7 +1096,7 @@
       "name": "Sufle",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731426602/product-photos/deserts/chocolate/sufle.png",
       "categoryId": "3",
-      "subcategoryId": "15",
+      "subcategoryId": "cake",
       "isFavorite": false,
       "categoryName": "Tatlı",
       "subCategoryName": "Kek"
@@ -1106,7 +1106,7 @@
       "name": "Cheesecake",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731426087/product-photos/deserts/icecream/cheesecake.png",
       "categoryId": "3",
-      "subcategoryId": "16",
+      "subcategoryId": "icecream",
       "isFavorite": false,
       "categoryName": "Tatlı",
       "subCategoryName": "Dondurmalı"
@@ -1116,7 +1116,7 @@
       "name": "Waffle",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731426187/product-photos/deserts/icecream/waffle.png",
       "categoryId": "3",
-      "subcategoryId": "16",
+      "subcategoryId": "icecream",
       "isFavorite": false,
       "categoryName": "Tatlı",
       "subCategoryName": "Dondurmalı"
@@ -1126,11 +1126,89 @@
       "name": "Kızarmış Dondurma",
       "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731426244/product-photos/deserts/icecream/fried-icecream.png",
       "categoryId": "3",
-      "subcategoryId": "16",
+      "subcategoryId": "icecream",
       "isFavorite": false,
       "categoryName": "Tatlı",
       "subCategoryName": "Dondurmalı"
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "name": "Potakal Suyu",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731415525/product-photos/drinks/juice/orange.png",
+      "categoryId": "2",
+      "isFavorite": true,
+      "subcategoryId": "juice",
+      "productId": "84",
+      "id": "1",
+      "categoryName": "İçecek",
+      "subCategoryName": "Meyve Suyu"
+    },
+    {
+      "name": "Beyaz Şarap",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731397971/product-photos/drinks/alcohol/white-wine.png",
+      "categoryId": "2",
+      "isFavorite": true,
+      "subcategoryId": "alcohol",
+      "productId": "46",
+      "id": "2",
+      "categoryName": "İçecek",
+      "subCategoryName": "Alkol"
+    },
+    {
+      "name": "Fıstıklı Latte",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731410154/product-photos/drinks/hot/latte.png",
+      "categoryId": "2",
+      "isFavorite": true,
+      "subcategoryId": "hot",
+      "productId": "55",
+      "id": "4",
+      "categoryName": "İçecek",
+      "subCategoryName": "Sıcak"
+    },
+    {
+      "name": "Vodka",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731409335/product-photos/drinks/alcohol/vodka.png",
+      "categoryId": "2",
+      "isFavorite": true,
+      "subcategoryId": "alcohol",
+      "productId": "50",
+      "id": "5",
+      "categoryName": "İçecek",
+      "subCategoryName": "Alkol"
+    },
+    {
+      "name": "Baklava",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731424585/product-photos/deserts/sherbet/baklava.png",
+      "categoryId": "3",
+      "isFavorite": true,
+      "subcategoryId": "sherbet",
+      "productId": "91",
+      "id": "7",
+      "categoryName": "Tatlı",
+      "subCategoryName": "Şerbetli"
+    },
+    {
+      "name": "Izgara Bonfile",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731311415/product-photos/foods/meat/tender-loin.png",
+      "categoryId": "1",
+      "isFavorite": true,
+      "subcategoryId": "meat",
+      "productId": "40",
+      "id": "8",
+      "categoryName": "Yemek",
+      "subCategoryName": "Et"
+    },
+    {
+      "name": "Akdeniz Pizza",
+      "image": "https://res.cloudinary.com/doar0vpnc/image/upload/v1731052567/product-photos/foods/pizza/mediterrenian.png",
+      "categoryId": "1",
+      "isFavorite": true,
+      "subcategoryId": "pizza",
+      "productId": "2",
+      "id": "9",
+      "categoryName": "Yemek",
+      "subCategoryName": "Pizza"
+    }
+  ]
 }
