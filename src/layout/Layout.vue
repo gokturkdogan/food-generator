@@ -18,8 +18,9 @@ export default {
     AppBar,
     Modal,
   },
-  created() {
-    this.$store.dispatch("category/getCategories");
+  async created() {
+    await this.$store.dispatch("category/getCategories");
+    await this.$store.dispatch('category/getSubCategories');
   },
   computed: {
     isFavoritePage() {

@@ -2,7 +2,7 @@
   <div class="header">
     <div class="header__banner">
       <div class="header__text">
-        <div class="header__title">Merhaba, <span class="header__suffix">Karina</span></div>
+        <div class="header__title">Merhaba, <span class="header__suffix">User</span></div>
         <HeaderLogoIcon class="header__logo" />
       </div>
       <div class="header__subtitle">Bugün ne yemek istersin?</div>
