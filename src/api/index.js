@@ -4,7 +4,7 @@ const api = {
     products: "api/products?subcategoryId={id}",
     categoryproducts: "api/products?categoryId={id}",
     productdetail: "api/products/{id}",
-    favorites: "api/favorites"
+    favorites: "api/products"
 };
 
 export default api;

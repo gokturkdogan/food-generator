@@ -12,9 +12,6 @@ export default {
   components: {
     Item
   },
-  created() {
-    this.$store.dispatch('category/getSubCategories');
-  },
   computed: {
     subCategories() {
       return this.$store.getters['category/getSubCategories'];

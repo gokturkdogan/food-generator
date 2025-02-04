@@ -59,18 +59,14 @@ const category = {
       dispatch('getSubCategories');
     },
     async getSubCategories({ commit, state }) {
-      commit('SET_CATEGORY_LOADER', true);
-      try {
-        const url = API.subcategories.replace("{id}", state.activeCategoryId);
-        const response = await Services.get(url);
-        commit('SET_SUB_CATEGORIES', response.data);
-      } catch (error) {
-        console.error('Kategori verisi alınırken bir hata oluştu:', error);
-      } finally {
-        setTimeout(() => {
-          commit('SET_CATEGORY_LOADER', false);
-        }, 1000);
-      }
+      await commit('SET_CATEGORY_LOADER', true);
+      const activeCategory = state.categories.find(
+        category => category.categoryId === state.activeCategoryId
+      );
+      await commit('SET_SUB_CATEGORIES', activeCategory.subcategories);
+      setTimeout(() => {
+        commit('SET_CATEGORY_LOADER', false);
+      }, 1000);
     },
     async getProducts({ commit, dispatch }, subCategoryId) {
       try {
