@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <Header />
-    <router-view class="layout__content" :class="{ '-favorites': isFavoritePage }"/>
+    <router-view class="layout__content" :class="{ '-notHomePage': isNotHomePage }"/>
     <AppBar />
     <Modal />
   </div>
@@ -23,8 +23,8 @@ export default {
     await this.$store.dispatch('category/getSubCategories');
   },
   computed: {
-    isFavoritePage() {
-      return this.$route.name === 'Favorites';
+    isNotHomePage() {
+      return this.$route.name === 'Favorites' || this.$route.name === 'ProductList';
     }
   }
 };
@@ -40,7 +40,7 @@ export default {
     overflow-y: scroll;
     width: 100%;
 
-    &.-favorites {
+    &.-notHomePage {
       top: 178px;
     }
   }

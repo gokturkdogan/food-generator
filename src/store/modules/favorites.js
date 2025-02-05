@@ -31,6 +31,7 @@ const favorites = {
                     const url = API.productdetail.replace("{id}", product.productId);
                     await Services.put(url, updatedProduct);
                     await dispatch('getFavorites');
+                    await dispatch('category/getProductList', null, { root: true });
                 } else {
                     console.warn("Belirtilen productId ile eşleşen ürün bulunamadı.");
                 }
@@ -49,6 +50,25 @@ const favorites = {
                     }
                     const url = API.productdetail.replace("{id}", product.productId);
                     await Services.put(url, updatedProduct);
+                } else {
+                    console.warn("Belirtilen productId ile eşleşen ürün bulunamadı.");
+                }
+            } catch (error) {
+                console.error("Favoriler güncellenirken bir hata oluştu:", error);
+            }
+        },
+        async addFavoritesFromProductList({ rootState, dispatch }, { productId }) {
+            try {
+                const products = rootState.category.products;
+                if (products) {
+                    const product = rootState.category.products.find(product => product.productId === productId);
+                    const updatedProduct = {
+                        ...product,
+                        isFavorite: true
+                    }
+                    const url = API.productdetail.replace("{id}", product.productId);
+                    await Services.put(url, updatedProduct);
+                    await dispatch('category/getProductList', null, { root: true });
                 } else {
                     console.warn("Belirtilen productId ile eşleşen ürün bulunamadı.");
                 }
