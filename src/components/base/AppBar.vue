@@ -12,8 +12,8 @@
         <DiceIcon @click="randomize()"/>
     </div>
     <div class="appBar__side">
-      <span class="appBar__link">      
-        <MessageIcon />
+      <span class="appBar__link" :class="{ '-active': activeRoute === 'ProductList' }">      
+        <ListIcon @click="changeRoute('ProductList')"/>
       </span>
       <span class="appBar__link">
         <userIcon />
@@ -28,6 +28,7 @@ import FavIcon from "../../assets/images/icons/favorite-icon.vue";
 import MessageIcon from "../../assets/images/icons/message-icon.vue";
 import userIcon from "../../assets/images/icons/user-icon.vue";
 import DiceIcon from "../../assets/images/icons/dice-icon.vue";
+import ListIcon from "../../assets/images/icons/product-list-icon.vue";
 
 export default {
   name: "Appbar",
@@ -37,6 +38,7 @@ export default {
     MessageIcon,
     userIcon,
     DiceIcon,
+    ListIcon
   },
   methods: {
     changeRoute(destination) {
@@ -83,7 +85,6 @@ export default {
     transform: translate(-50%, -50%);
     top: 0;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
   }
 
   &__side {
@@ -102,7 +103,7 @@ export default {
     &.-active {
       border-bottom: 5px solid $orange-500;
       background: $orange-100;
-      background: linear-gradient(to top, $orange-300 0%, transparent 100%); /* $orange-500 yerine renk kodu */
+      background: linear-gradient(to top, $orange-300 0%, transparent 100%);
       clip-path: polygon(0% 0%, 100% 0%, 70% 100%, 30% 100%);
     }
   }

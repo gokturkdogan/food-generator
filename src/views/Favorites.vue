@@ -16,7 +16,7 @@
 import List from '../components/favorites/List.vue';
 import EmptyIcon from '../assets/images/icons/header-logo-icon.vue';
 export default {
-  name: "HomePage",
+  name: "Favorites",
   data() {
     return {
       loader: true

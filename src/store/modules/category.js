@@ -99,7 +99,15 @@ const category = {
       } catch (error) {
         console.error("Rastgele ürün seçilirken bir hata oluştu:", error);
       }
-    }
+    },
+    async getProductList({ commit }) {
+      try {
+          const response = await Services.get(API.favorites);
+          commit('SET_PRODUCTS', response.data);
+      } catch (error) {
+          console.error('Ürünler getirilirken bir hata oluştu:', error);
+      }
+  },
   },
   getters: {
     getCategories: (state) => state.categories,
