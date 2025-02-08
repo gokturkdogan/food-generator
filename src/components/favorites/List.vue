@@ -1,6 +1,10 @@
 <template>
   <div class="favoritesList">
-    <Item v-for="(favorite, index) in favorites" :key="index" :favorite="favorite"/>
+    <Item
+      v-for="(favorite, index) in favorites"
+      :key="index"
+      :favorite="favorite"
+    />
   </div>
 </template>
 <script>
@@ -11,13 +15,13 @@ export default {
     Item,
   },
   created() {
-    this.$store.dispatch('favorites/getFavorites');
+    this.$store.dispatch("favorites/getFavorites");
   },
   computed: {
     favorites() {
-      return this.$store.getters['favorites/getFavorites'];
-    }
-  }
+      return this.$store.getters["favorites/getFavorites"];
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>

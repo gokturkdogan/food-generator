@@ -1,37 +1,44 @@
 <template>
   <div class="favoritesItem">
     <div v-if="loader" class="favoritesItem__loader">
-      <img class="favoritesItem__gif" src="../../assets/images/loaders/loader.gif" alt="loader">
+      <img
+        class="favoritesItem__gif"
+        src="../../assets/images/loaders/loader.gif"
+        alt="loader"
+      />
     </div>
     <div v-else class="favoritesItem__content">
-      <img :src="favorite.image" alt="favorite" class="favoritesItem__image">
+      <img :src="favorite.image" alt="favorite" class="favoritesItem__image" />
       <div class="favoritesItem__data">
-          <div class="favoritesItem__text">
-              <span class="favoritesItem__title">
-                  {{ favorite.name }}
-              </span>
-              <span class="favoritesItem__subtitle">
-                {{ favorite.categoryName }} / {{ favorite.subCategoryName }}
-              </span>
-          </div>
-          <div class="favoritesItem__action" @click="deleteFavorites(favorite.productId)">
-              <FavIcon />
-          </div>
+        <div class="favoritesItem__text">
+          <span class="favoritesItem__title">
+            {{ favorite.name }}
+          </span>
+          <span class="favoritesItem__subtitle">
+            {{ favorite.categoryName }} / {{ favorite.subCategoryName }}
+          </span>
+        </div>
+        <div
+          class="favoritesItem__action"
+          @click="deleteFavorites(favorite.productId)"
+        >
+          <FavIcon />
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
-import FavIcon from '../../assets/images/icons/favorite-icon.vue';
+import FavIcon from "../../assets/images/icons/favorite-icon.vue";
 export default {
   name: "FavoritesItem",
   data() {
     return {
-      loader: false
-    }
+      loader: false,
+    };
   },
   components: {
-    FavIcon
+    FavIcon,
   },
   props: {
     favorite: {
@@ -43,10 +50,10 @@ export default {
   methods: {
     async deleteFavorites(productId) {
       this.loader = true;
-      await this.$store.dispatch('favorites/deleteFavorites', { productId });
+      await this.$store.dispatch("favorites/deleteFavorites", { productId });
       this.loader = false;
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
