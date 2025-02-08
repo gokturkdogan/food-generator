@@ -1,24 +1,25 @@
 <template>
   <div class="splash">
-    <div class="splash__logo">
-      <img
-        class="splash__logo"
-        src="../../assets/images/logos/splash.png"
-        alt="logo"
-      />
-    </div>
+    <img
+      class="splash__logo"
+      src="../../assets/images/logos/splash.png"
+      alt="logo"
+    />
   </div>
 </template>
+<script>
+</script>
 <style lang="scss" scoped>
 .splash {
   height: 100vh;
-  background: $splash-Bg;
+  background: linear-gradient(#fff700, #f10505);
   display: flex;
   justify-content: center;
   align-items: center;
 
   &__logo {
-    width: 200px;
+    width: 300px;
+    filter: invert(100%);
   }
 }
 </style>

@@ -1,10 +1,14 @@
 <template>
-    <div class="deneme">
-        burası anasayfa
+    <div class="home">
+        <List />
     </div>
 </template>
-<style lang="scss" scoped>
-    .deneme {
-        background-color: $deneme;
-    }
-</style>
+<script>
+import List from '../components/home/List.vue';
+export default {
+  name: "HomePage",
+  components: {
+    List
+  }
+};
+</script>
