@@ -4,6 +4,7 @@
     <router-view class="layout__content" :class="{ '-notHomePage': isNotHomePage }"/>
     <AppBar />
     <Modal />
+    <Notify />
   </div>
 </template>
   
@@ -11,12 +12,14 @@
 import Header from "../components/base/Header.vue";
 import AppBar from "../components/base/AppBar.vue";
 import Modal from "../components/home/Modal.vue";
+import Notify from "../components/base/Notify.vue";
 export default {
   name: "Layout",
   components: {
     Header,
     AppBar,
     Modal,
+    Notify
   },
   async created() {
     await this.$store.dispatch("category/getCategories");
