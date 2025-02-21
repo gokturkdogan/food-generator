@@ -11,13 +11,13 @@ const favorites = {
         },
     },
     actions: {
-        async getFavorites({ commit }) {
+        async getFavorites({ commit, dispatch }) {
             try {
                 const response = await Services.get(API.favorites);
                 const favoriteItems = response.data.filter(item => item.isFavorite);
                 commit('SET_FAVORITES', favoriteItems);
             } catch (error) {
-                console.error('Favori verisi alınırken bir hata oluştu:', error);
+                dispatch('notify/openNotify', { type: 'error', message: 'Favori verisi alınırken bir hata oluştu' }, { root: true });
             }
         },
         async deleteFavorites({ state, dispatch, commit }, { productId }) {
@@ -32,14 +32,15 @@ const favorites = {
                     await Services.put(url, updatedProduct);
                     await dispatch('getFavorites');
                     await dispatch('category/getProductList', null, { root: true });
+                    dispatch('notify/openNotify', { type: 'success', message: 'Başarı İle Favorilerden Kaldırıldı' }, { root: true });
                 } else {
-                    console.warn("Belirtilen productId ile eşleşen ürün bulunamadı.");
+                    dispatch('notify/openNotify', { type: 'warning', message: 'Belirtilen productId ile eşleşen ürün bulunamadı.' }, { root: true });
                 }
             } catch (error) {
-                console.error("Favoriler güncellenirken bir hata oluştu:", error);
+                dispatch('notify/openNotify', { type: 'error', message: 'Favoriler güncellenirken bir hata oluştu' }, { root: true });
             }
         },
-        async addFavorites({ rootState, commit }) {
+        async addFavorites({ rootState, commit, dispatch }) {
             try {
                 await commit('category/SET_SELECTED_PRODUCT', { isFavorite: true }, { root: true });
                 const product = rootState.category.selectedProduct;
@@ -50,11 +51,12 @@ const favorites = {
                     }
                     const url = API.productdetail.replace("{id}", product.productId);
                     await Services.put(url, updatedProduct);
+                    dispatch('notify/openNotify', { type: 'success', message: 'Başarı İle Favorilere Eklendi' }, { root: true });
                 } else {
-                    console.warn("Belirtilen productId ile eşleşen ürün bulunamadı.");
+                    dispatch('notify/openNotify', { type: 'warning', message: 'Belirtilen productId ile eşleşen ürün bulunamadı' }, { root: true });
                 }
             } catch (error) {
-                console.error("Favoriler güncellenirken bir hata oluştu:", error);
+                dispatch('notify/openNotify', { type: 'error', message: 'Favoriler güncellenirken bir hata oluştu' }, { root: true });
             }
         },
         async addFavoritesFromProductList({ rootState, dispatch }, { productId }) {
@@ -69,11 +71,12 @@ const favorites = {
                     const url = API.productdetail.replace("{id}", product.productId);
                     await Services.put(url, updatedProduct);
                     await dispatch('category/getProductList', null, { root: true });
+                    dispatch('notify/openNotify', { type: 'success', message: 'Başarı İle Favorilere Eklendi' }, { root: true });
                 } else {
-                    console.warn("Belirtilen productId ile eşleşen ürün bulunamadı.");
+                    dispatch('notify/openNotify', { type: 'warning', message: 'Belirtilen productId ile eşleşen ürün bulunamadı' }, { root: true });
                 }
             } catch (error) {
-                console.error("Favoriler güncellenirken bir hata oluştu:", error);
+                dispatch('notify/openNotify', { type: 'error', message: 'Favoriler güncellenirken bir hata oluştu' }, { root: true });
             }
         }
     },
