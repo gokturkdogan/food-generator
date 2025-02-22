@@ -7,7 +7,7 @@
       </div>
       <div class="header__subtitle">Bugün ne yemek istersin?</div>
     </div>
-    <div class="header__config">
+    <div v-if="!isProductDetailPage" class="header__config">
       <div class="header__search">
         <SearchIcon />
         <input class="header__input" type="text" placeholder="Kategori ara" />
@@ -57,6 +57,9 @@ export default {
     },
     isCategoryPage() {
       return this.$route.name === 'Home';
+    },
+    isProductDetailPage() {
+      return this.$route.name === 'ProductDetail'
     }
   },
 };

@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <Header />
-    <router-view class="layout__content" :class="{ '-notHomePage': isNotHomePage }"/>
+    <router-view class="layout__content" :class="{ '-notHomePage': isNotHomePage, '-detailPage': isDetailPage }"/>
     <AppBar />
     <Modal />
     <Notify />
@@ -28,6 +28,9 @@ export default {
   computed: {
     isNotHomePage() {
       return this.$route.name === 'Favorites' || this.$route.name === 'ProductList';
+    },
+    isDetailPage() {
+      return this.$route.name === 'ProductDetail';
     }
   }
 };
@@ -45,6 +48,10 @@ export default {
 
     &.-notHomePage {
       top: 178px;
+    }
+
+    &.-detailPage {
+      top: 100px;
     }
   }
 }
