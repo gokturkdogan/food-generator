@@ -8,7 +8,7 @@
         <div class="modal__body">
           <img v-if="modal.loader" class="modal__loader" src="../../assets/images/loaders/randomizer-loader.gif" alt="">
           <div class="modal__content" v-else>
-            <img class="modal__image" :src="selectedProduct.image" alt="product" />
+            <img @click="goToDetail(selectedProduct.productId)" class="modal__image" :src="selectedProduct.image" alt="product" />
             <div class="modal__text">
               <span class="modal__name">{{ selectedProduct.name }}</span>
               <span class="modal__fav" @click="addFavorites(selectedProduct.productId)">
@@ -44,6 +44,10 @@ export default {
       } else {
         this.$store.dispatch('favorites/addFavorites');
       }
+    },
+    async goToDetail(productId) {
+      await this.$store.dispatch('productDetail/goToProductDetail', productId);
+      this.$store.commit("category/SET_MODAL", { isShow: false });
     }
   },
   computed: {
