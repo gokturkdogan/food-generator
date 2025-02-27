@@ -2,18 +2,24 @@
   <div class="appBar">
     <div class="appBar__side">
       <span class="appBar__link" :class="{ '-active': activeRoute === 'Home' }">
-        <HomeIcon @click="changeRoute('Home')"/>
+        <HomeIcon @click="changeRoute('Home')" />
       </span>
-      <span class="appBar__link" :class="{ '-active': activeRoute === 'Favorites' }">
-        <FavIcon @click="changeRoute('Favorites')"/>
+      <span
+        class="appBar__link"
+        :class="{ '-active': activeRoute === 'Favorites' }"
+      >
+        <FavIcon @click="changeRoute('Favorites')" />
       </span>
     </div>
     <div class="appBar__mid">
-        <DiceIcon @click="randomize()"/>
+      <DiceIcon @click="randomize()" />
     </div>
     <div class="appBar__side">
-      <span class="appBar__link" :class="{ '-active': activeRoute === 'ProductList' }">      
-        <ListIcon @click="changeRoute('ProductList')"/>
+      <span
+        class="appBar__link"
+        :class="{ '-active': activeRoute === 'ProductList' }"
+      >
+        <ListIcon @click="changeRoute('ProductList')" />
       </span>
       <span class="appBar__link">
         <userIcon />
@@ -38,21 +44,21 @@ export default {
     MessageIcon,
     userIcon,
     DiceIcon,
-    ListIcon
+    ListIcon,
   },
   methods: {
     changeRoute(destination) {
       this.$router.push({ name: destination });
     },
     randomize() {
-      this.$store.dispatch('randomizer/randomizeWithCategory');
-    }
+      this.$store.dispatch("randomizer/randomizeWithCategory");
+    },
   },
   computed: {
     activeRoute() {
       return this.$route.name;
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
