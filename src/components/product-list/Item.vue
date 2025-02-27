@@ -1,5 +1,5 @@
 <template>
-  <div class="productItem">
+  <div @click="goToDetail(product.productId)" class="productItem">
     <div v-if="loader" class="productItem__loader">
       <img
         class="productItem__gif"
@@ -56,7 +56,6 @@ export default {
       required: true,
     },
   },
-  created() {},
   methods: {
     async deleteFavorites(productId) {
       this.loader = true;
@@ -69,6 +68,9 @@ export default {
         productId,
       });
       this.loader = false;
+    },
+    async goToDetail(productId) {
+      this.$store.dispatch("productDetail/goToProductDetail", productId);
     },
   },
 };
