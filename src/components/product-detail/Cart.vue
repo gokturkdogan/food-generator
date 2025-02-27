@@ -18,7 +18,11 @@
       </span>
     </div>
     <div class="cart__acitons">
-      <button @click="favorite(product.isFavorite)" class="cart__button" :class="{ '-loader': loader }">
+      <button
+        @click="favorite(product.isFavorite)"
+        class="cart__button"
+        :class="{ '-loader': loader }"
+      >
         <img
           class="cart__loader"
           v-if="loader"
@@ -26,7 +30,7 @@
           alt="loader"
         />
         <span v-else>{{ buttonText }}</span>
-        </button>
+      </button>
     </div>
   </div>
 </template>
@@ -37,8 +41,8 @@ export default {
   name: "ProductDetailCart",
   data() {
     return {
-      loader: false
-    }
+      loader: false,
+    };
   },
   props: {
     product: {
@@ -62,15 +66,22 @@ export default {
   methods: {
     async favorite(isFavorite) {
       this.loader = true;
-      if(isFavorite) {
-        await this.$store.dispatch('favorites/deleteFavorites', { productId: this.product.productId });
+      if (isFavorite) {
+        await this.$store.dispatch("favorites/deleteFavorites", {
+          productId: this.product.productId,
+        });
       } else {
-        await this.$store.dispatch('favorites/addFavoritesFromProductList', { productId: this.product.productId });
+        await this.$store.dispatch("favorites/addFavoritesFromProductList", {
+          productId: this.product.productId,
+        });
       }
-      await this.$store.dispatch("productDetail/getProductDetail", this.product.productId);
+      await this.$store.dispatch(
+        "productDetail/getProductDetail",
+        this.product.productId
+      );
       this.loader = false;
-    }
-  }
+    },
+  },
 };
 </script>
   <style lang="scss" scoped>

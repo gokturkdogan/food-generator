@@ -70,8 +70,8 @@ export default {
       this.loader = false;
     },
     async goToDetail(productId) {
-      this.$store.dispatch('productDetail/goToProductDetail', productId);
-    }
+      this.$store.dispatch("productDetail/goToProductDetail", productId);
+    },
   },
 };
 </script>

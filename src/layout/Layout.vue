@@ -1,7 +1,10 @@
 <template>
   <div class="layout">
     <Header />
-    <router-view class="layout__content" :class="{ '-notHomePage': isNotHomePage, '-detailPage': isDetailPage }"/>
+    <router-view
+      class="layout__content"
+      :class="{ '-notHomePage': isNotHomePage, '-detailPage': isDetailPage }"
+    />
     <AppBar />
     <Modal />
     <Notify />
@@ -19,20 +22,22 @@ export default {
     Header,
     AppBar,
     Modal,
-    Notify
+    Notify,
   },
   async created() {
     await this.$store.dispatch("category/getCategories");
-    await this.$store.dispatch('category/getSubCategories');
+    await this.$store.dispatch("category/getSubCategories");
   },
   computed: {
     isNotHomePage() {
-      return this.$route.name === 'Favorites' || this.$route.name === 'ProductList';
+      return (
+        this.$route.name === "Favorites" || this.$route.name === "ProductList"
+      );
     },
     isDetailPage() {
-      return this.$route.name === 'ProductDetail';
-    }
-  }
+      return this.$route.name === "ProductDetail";
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
