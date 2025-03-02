@@ -21,12 +21,12 @@ export default {
   },
   computed: {
     notify() {
-      return this.$store.getters['notify/getNotify'];
+      return this.$store.getters["notify/getNotify"];
     },
     notifyClass() {
-      return this.notify.type ? `-` + this.notify.type : '';
-    }
-  }
+      return this.notify.type ? `-` + this.notify.type : "";
+    },
+  },
 };
 </script>
 
