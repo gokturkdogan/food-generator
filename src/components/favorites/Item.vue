@@ -20,7 +20,7 @@
         </div>
         <div
           class="favoritesItem__action"
-          @click="deleteFavorites(favorite.productId)"
+          @click.stop="deleteFavorites(favorite.productId)"
         >
           <FavIcon />
         </div>
