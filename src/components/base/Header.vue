@@ -27,7 +27,7 @@
         @click="changeCategory(category.categoryId)"
       >
         <div class="header__categoryIcon" v-html="category.image"></div>
-        <span class="header__categoryText">{{ category.name }}</span>
+        <span class="header__categoryText">{{ category.names[$i18n.locale]}}</span>
       </div>
     </div>
   </div>
