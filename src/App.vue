@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Splash v-if="splash" />
+    <Splash v-if="true" />
     <Layout v-else />
   </div>
 </template>
