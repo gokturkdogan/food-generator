@@ -2,12 +2,14 @@
   <div class="header">
     <div class="header__banner">
       <div class="header__text">
-        <div class="header__title">Merhaba, Kullanıcı</div>
+        <div class="header__title">
+          {{ $t('header.hello') }}, <span class="header__suffix">User</span>
+        </div>
         <HeaderLogoIcon class="header__logo" />
       </div>
-      <div class="header__subtitle">Bugün ne yemek istersin?</div>
+      <div class="header__subtitle">{{ $t('header.text') }}</div>
     </div>
-    <div class="header__config">
+    <div v-if="!isProductDetailPage" class="header__config">
       <div class="header__search">
         <SearchIcon />
         <input class="header__input" type="text" placeholder="Kategori ara" />
@@ -16,16 +18,16 @@
         <ConfigIcon />
       </div>
     </div>
-    <div class="header__categories">
+    <div v-if="isCategoryPage" class="header__categories">
       <div
         v-for="(category, index) in categories"
         :key="index"
         class="header__categoryItem"
-        :class="{ '-active': activeCategoryId === category.id }"
-        @click="changeCategory(category.id)"
+        :class="{ '-active': activeCategoryId === category.categoryId }"
+        @click="changeCategory(category.categoryId)"
       >
         <div class="header__categoryIcon" v-html="category.image"></div>
-        <span class="header__categoryText">{{ category.name }}</span>
+        <span class="header__categoryText">{{ category.names[$i18n.locale]}}</span>
       </div>
     </div>
   </div>
@@ -55,13 +57,25 @@ export default {
     activeCategoryId() {
       return this.$store.getters["category/getActiveCategoryId"];
     },
+    isCategoryPage() {
+      return this.$route.name === "Home";
+    },
+    isProductDetailPage() {
+      return this.$route.name === "ProductDetail";
+    },
   },
 };
 </script>
 <style lang="scss" scoped>
 .header {
+  z-index: 100;
   padding: 15px;
   box-shadow: rgba(0, 0, 0, 0.08) 1px 6px 5px 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
 
   &__text {
     display: flex;
@@ -73,6 +87,11 @@ export default {
     font-size: 30px;
     letter-spacing: 1px;
     color: $black;
+  }
+
+  &__suffix {
+    color: $orange-500;
+    font-weight: 600;
   }
 
   &__subtitle {
@@ -87,7 +106,7 @@ export default {
   &__search {
     display: flex;
     align-items: center;
-    background-color: #e7e7e7;
+    background-color: $orange-100;
     padding: 15px;
     width: 70%;
     border-radius: 20px;
@@ -98,12 +117,12 @@ export default {
     background: none;
     width: 100%;
     margin-left: 10px;
-    color: #9f9f9f;
+    color: $white;
     &:focus {
       outline: none;
     }
     &::placeholder {
-      color: #cecece;
+      color: $white;
     }
   }
 

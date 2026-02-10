@@ -16,7 +16,7 @@ svg {
   height: 25px;
   width: 25px;
   fill: #ffffff;
-  background-color: #f37b2d;
+  background-color: #ff009d;
   padding: 4px;
   border-radius: 100%;
 }

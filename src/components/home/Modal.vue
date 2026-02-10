@@ -6,13 +6,29 @@
           <XMarkIcon @click="closeModal()" />
         </div>
         <div class="modal__body">
-          <iframe v-if="modal.loader" class="modal__loader" src="https://lottie.host/embed/7fd0a2c1-47ea-4c90-af48-567c00a89532/MZX9DyMM53.json"></iframe>
+          <img
+            v-if="modal.loader"
+            class="modal__loader"
+            src="../../assets/images/loaders/randomizer-loader.gif"
+            alt=""
+          />
           <div class="modal__content" v-else>
-            <img class="modal__image" :src="selectedProduct.image" alt="product" />
+            <img
+              @click="goToDetail(selectedProduct.productId)"
+              class="modal__image"
+              :src="selectedProduct.image"
+              alt="product"
+            />
             <div class="modal__text">
               <span class="modal__name">{{ selectedProduct.name }}</span>
-              <span class="modal__fav" @click="updateFavorites(selectedProduct.id, selectedProduct.isFavorite)">
-                <FavIcon v-if="selectedProduct.isFavorite" class="modal__icon" />
+              <span
+                class="modal__fav"
+                @click="addFavorites(selectedProduct.productId)"
+              >
+                <FavIcon
+                  v-if="selectedProduct.isFavorite"
+                  class="modal__icon"
+                />
                 <FavIconEmpty v-else class="modal__icon" />
               </span>
             </div>
@@ -32,15 +48,23 @@ export default {
   components: {
     XMarkIcon,
     FavIcon,
-    FavIconEmpty
+    FavIconEmpty,
   },
   methods: {
     closeModal() {
       this.$store.commit("category/SET_MODAL", { isShow: false, loader: true });
     },
-    updateFavorites(productId, isFavorite) {
-      this.$store.dispatch('category/updateFavorites', { productId, isFavorite });
-    }
+    addFavorites(productId) {
+      if (this.selectedProduct.isFavorite) {
+        this.$store.dispatch("favorites/deleteFavorites", { productId });
+      } else {
+        this.$store.dispatch("favorites/addFavorites");
+      }
+    },
+    async goToDetail(productId) {
+      await this.$store.dispatch("productDetail/goToProductDetail", productId);
+      this.$store.commit("category/SET_MODAL", { isShow: false });
+    },
   },
   computed: {
     modal() {
@@ -58,8 +82,9 @@ export default {
     background-color: #00000080;
     position: absolute;
     top: 0;
+    bottom: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 100;
 
     @include desktop {
@@ -87,10 +112,8 @@ export default {
 
   &__body {
     padding: 0 40px 40px;
-  }
-
-  &__loader {
-    border: none;
+    display: flex;
+    justify-content: center;
   }
 
   &__content {
@@ -114,7 +137,7 @@ export default {
   &__name {
     font-weight: 600;
     letter-spacing: 2px;
-    font-size: 25px;
+    font-size: 23px;
   }
 
   &__fav {
@@ -124,6 +147,7 @@ export default {
   &__icon {
     height: 30px;
     width: 30px;
+    margin-left: 30px;
   }
 }
 </style>
