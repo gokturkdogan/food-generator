@@ -1,0 +1,26 @@
+{
+    "header": {
+        "hello": "Merhaba",
+        "text": "Bugün ne yemek istersin?"
+    },
+    "notify": {
+        "favorites": {
+            "add": "Başarı İle Favorilere Eklendi",
+            "remove": "Başarı İle Favorilerden Kaldırıldı",
+            "error": "Favoriler güncellenirken bir hata oluştu",
+            "warning": "Favoriler verisi alınırken bir hata oluştu"
+        },
+        "product": {
+            "error": "Belirtilen productId ile eşleşen ürün bulunamadı."
+        },
+        "category": {
+            "error": "Kategori verisi alınırken bir hata oluştu:"
+        },
+        "products": {
+            "error": "Ürünler getirilirken bir hata oluştu:"
+        },
+        "randomizer": {
+            "error": "Rastgele ürün seçilirken bir hata oluştu:"
+        }
+    }
+}

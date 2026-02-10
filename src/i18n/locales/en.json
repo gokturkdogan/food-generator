@@ -1,0 +1,26 @@
+{
+    "header": {
+        "hello": "Hello",
+        "text": "What would you like to eat today?"
+    },
+    "notify": {
+        "favorites": {
+            "add": "Successfully Added to Favorites",
+            "remove": "Successfully Removed from Favorites",
+            "error": "An error occurred while updating favorites",
+            "warning": "An error occurred while retrieving favorites data"
+        },
+        "product": {
+            "error": "No products were found matching the specified productId."
+        },
+        "category": {
+            "error": "An error occurred while retrieving category data:"
+        },
+        "products": {
+            "error": "An error occurred while fetching products:"
+        },
+        "randomizer": {
+            "error": "An error occurred while selecting a random product:"
+        }
+    }
+}
