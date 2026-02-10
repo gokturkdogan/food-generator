@@ -1,5 +1,6 @@
 import Services from '../../config/_axios';
 import API from '../../api';
+import i18n from '../../i18n';
 
 const category = {
   state: () => ({
@@ -50,7 +51,7 @@ const category = {
         const response = await Services.get(API.categories);
         commit('SET_CATEGORIES', response.data);
       } catch (error) {
-        console.error('Kategori verisi alınırken bir hata oluştu:', error);
+        console.error(i18n.global.t('notify.category.error'), error);
       }
     },
     async changeCategory({ commit, dispatch }, categoryId) {
@@ -79,7 +80,7 @@ const category = {
           commit('SET_MODAL', { loader: false });
         }, 2000);
       } catch (error) {
-        console.error('Kategori verisi alınırken bir hata oluştu:', error);
+        console.error(i18n.global.t('notify.category.error'), error);
       }
     },
     async getRandomProduct({ commit, state }) {
@@ -97,7 +98,7 @@ const category = {
         const response = await Services.get(API.productdetail.replace("{id}", randomProduct.productId));
         commit('SET_SELECTED_PRODUCT', response.data);
       } catch (error) {
-        console.error("Rastgele ürün seçilirken bir hata oluştu:", error);
+        console.error(i18n.global.t('notify.randomizer.error'), error);
       }
     },
     async getProductList({ commit }) {
@@ -105,7 +106,7 @@ const category = {
           const response = await Services.get(API.favorites);
           commit('SET_PRODUCTS', response.data);
       } catch (error) {
-          console.error('Ürünler getirilirken bir hata oluştu:', error);
+          console.error(i18n.global.t('notify.products.error'), error);
       }
   },
   },

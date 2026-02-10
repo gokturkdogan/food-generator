@@ -1,5 +1,6 @@
 import Services from '../../config/_axios';
 import API from '../../api';
+import i18n from '../../i18n';
 
 const randomizer = {
     state: () => ({}),
@@ -18,7 +19,7 @@ const randomizer = {
                     commit('category/SET_MODAL', { loader: false }, { root: true });
                 }, 2000);
             } catch (error) {
-                console.error('Kategori verisi alınırken bir hata oluştu:', error);
+                console.error(i18n.global.t('notify.category.error'), error);
             }
         }
     },
