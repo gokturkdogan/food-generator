@@ -21,7 +21,7 @@
         <div
           v-if="product.isFavorite"
           class="productItem__action"
-          @click="deleteFavorites(product.productId)"
+          @click.stop="deleteFavorites(product.productId)"
         >
           <FavIcon />
         </div>
