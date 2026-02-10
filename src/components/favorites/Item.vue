@@ -1,5 +1,5 @@
 <template>
-  <div class="favoritesItem">
+  <div @click="goToDetail(favorite.productId)" class="favoritesItem">
     <div v-if="loader" class="favoritesItem__loader">
       <img
         class="favoritesItem__gif"
@@ -20,7 +20,7 @@
         </div>
         <div
           class="favoritesItem__action"
-          @click="deleteFavorites(favorite.productId)"
+          @click.stop="deleteFavorites(favorite.productId)"
         >
           <FavIcon />
         </div>
@@ -52,6 +52,9 @@ export default {
       this.loader = true;
       await this.$store.dispatch("favorites/deleteFavorites", { productId });
       this.loader = false;
+    },
+    async goToDetail(productId) {
+      this.$store.dispatch("productDetail/goToProductDetail", productId);
     },
   },
 };

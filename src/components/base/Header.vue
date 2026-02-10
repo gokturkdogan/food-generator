@@ -2,12 +2,14 @@
   <div class="header">
     <div class="header__banner">
       <div class="header__text">
-        <div class="header__title">Merhaba, <span class="header__suffix">User</span></div>
+        <div class="header__title">
+          {{ $t('header.hello') }}, <span class="header__suffix">User</span>
+        </div>
         <HeaderLogoIcon class="header__logo" />
       </div>
-      <div class="header__subtitle">Bugün ne yemek istersin?</div>
+      <div class="header__subtitle">{{ $t('header.text') }}</div>
     </div>
-    <div class="header__config">
+    <div v-if="!isProductDetailPage" class="header__config">
       <div class="header__search">
         <SearchIcon />
         <input class="header__input" type="text" placeholder="Kategori ara" />
@@ -25,7 +27,7 @@
         @click="changeCategory(category.categoryId)"
       >
         <div class="header__categoryIcon" v-html="category.image"></div>
-        <span class="header__categoryText">{{ category.name }}</span>
+        <span class="header__categoryText">{{ category.names[$i18n.locale]}}</span>
       </div>
     </div>
   </div>
@@ -56,8 +58,11 @@ export default {
       return this.$store.getters["category/getActiveCategoryId"];
     },
     isCategoryPage() {
-      return this.$route.name === 'Home';
-    }
+      return this.$route.name === "Home";
+    },
+    isProductDetailPage() {
+      return this.$route.name === "ProductDetail";
+    },
   },
 };
 </script>
