@@ -1,8 +1,8 @@
 <template>
-  <div class="categoryItem" @click="openModal()">
-    <img class="categoryItem__image" :src="category.image" alt="category" />
-    <div class="categoryItem__title">{{ category.name }}</div>
-    <div class="categoryItem__subtitle">{{ category.text }}</div>
+  <div class="categoryItem" @click="randomize(subcategory.subcategoryId)">
+    <img class="categoryItem__image" :src="subcategory.image" alt="category" />
+    <div class="categoryItem__title">{{ subcategory.name }}</div>
+    <div class="categoryItem__subtitle">{{ subcategory.text }}</div>
     <div class="categoryItem__actions">
       <span class="categoryItem__actionText">Zar atmak için tıkla</span>
       <span class="categoryItem__actionButton"><CategoryItemDiceIcon /></span>
@@ -15,19 +15,19 @@ import CategoryItemDiceIcon from "../../assets/images/icons/category-item-dice-i
 export default {
   name: "FoodItem",
   props: {
-    category: {
+    subcategory: {
       type: Object,
-      required: true
-    }
+      required: true,
+    },
   },
   components: {
     CategoryItemDiceIcon,
   },
   methods: {
-    openModal() {
-      this.$store.commit('category/SET_MODAL', { isShow: true });
-    }
-  }
+    randomize(subCategoryId) {
+      this.$store.dispatch("category/getProducts", subCategoryId);
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -40,7 +40,7 @@ export default {
   justify-content: center;
   width: 40%;
   height: fit-content;
-  max-height: 170px;
+  height: 170px;
   padding: 10px;
   border-radius: 15px;
   margin-top: 80px;
